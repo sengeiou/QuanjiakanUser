@@ -1,0 +1,41 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    >
+    
+    <include 
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title"
+        />
+    
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_title"
+        android:divider="@color/transparent"
+        android:dividerHeight="@dimen/size_6"
+        android:fastScrollEnabled="false"
+        android:listSelector="@color/transparent"
+        android:layout_above="@+id/tv_add"
+        android:scrollbars="none" />
+    
+    <TextView 
+        android:id="@+id/tv_add"
+        style="@style/textview_submit"
+        android:layout_margin="@dimen/size_10"
+        android:layout_width="@dimen/height_150"
+        android:layout_height="@dimen/height_40"
+        android:background="@drawable/selecter_hollow_green_transport"
+        android:textSize="@dimen/font_14"
+        android:textColor="@color/color_title_green"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="@string/receive_address_add"
+        android:layout_alignParentBottom="true"
+        />
+    
+</RelativeLayout>

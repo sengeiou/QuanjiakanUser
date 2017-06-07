@@ -1,0 +1,204 @@
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in C:\Users\Administrator\AppData\Local\Android\Sdk/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the proguardFiles
+# directive in build.gradle.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+#-keep class com.google.gson.** {*; }
+
+-dontobfuscate
+-dontoptimize
+
+-dontwarn android.**
+-dontwarn com.android.**
+-dontwarn com.google.**
+-dontwarn cn.jmessage.**
+-dontwarn uk.co.senab.**
+-dontwarn com.alipay.**
+-dontwarn com.zxing.**
+-dontwarn com.handmark.**
+-dontwarn com.polonium.**
+-dontwarn com.amap.**
+-dontwarn com.autonavi.**
+-dontwarn com.loc.**
+-dontwarn org.apache.**
+-dontwarn de.greenrobot.**
+-dontwarn com.sun.**
+-dontwarn jj2000.**
+-dontwarn com.jg.**
+-dontwarn cn.jpush.**
+-dontwarn a.**
+-dontwarn b.a.**
+-dontwarn com.tencent.**
+-dontwarn com.nineoldandroids.**
+-dontwarn com.squareup.**
+-dontwarn com.alimama.**
+-dontwarn com.umeng.**
+-dontwarn u.upd.**
+-dontwarn com.nostra13.**
+-dontwarn com.qq.**
+-dontwarn java.**
+-dontwarn libcore.**
+-dontwarn com.quanjiakanuser.receiver.**
+-dontwarn com.androidquanjiakan.activity.main.**
+-dontwarn butterknife.**
+-dontwarn com.androidquanjiakan.activity.index.main.**
+-dontwarn javax.**
+-dontwarn com.fasterxml.**
+-dontwarn net.jcip.**
+-dontwarn com.duanqu.**
+-dontwarn com.umeng.**
+-dontwarn u.aly.**
+-dontwarn com.ut.device.**
+-dontwarn com.ta.utdid2.**
+-dontwarn com.alivc.**
+-dontwarn com.acme.**
+-dontwarn com.alibaba.**
+-dontwarn cn.jiguang.**
+-dontwarn com.loopj.**
+-dontwarn com.qiniu.**
+-dontwarn com.upyun.**
+-dontwarn com.wbj.ndk.natty.client.**
+-dontwarn com.androidquanjiakan.service.**
+
+-keep class com.androidquanjiakan.service.** {*;}
+-keep class com.wbj.ndk.natty.client.** {*;}
+-keep class com.upyun.** {*;}
+-keep class com.qiniu.** {*;}
+-keep class com.loopj.** {*;}
+-keep class cn.jiguang.** {*;}
+-keep class com.alibaba.** {*;}
+-keep class com.acme.** {*;}
+-keep class com.alivc.** {*;}
+-keep class com.ta.utdid2.** {*;}
+-keep class com.ut.device.** {*;}
+-keep class u.aly.** {*;}
+-keep class com.umeng.** {*;}
+-keep class com.duanqu.** {*;}
+-keep class net.jcip.** {*;}
+-keep class com.fasterxml.** {*;}
+-keep class javax.** {*;}
+-keep class android.** {*;}
+-keep class com.android.** {*;}
+-keep class com.google.** {*;}
+-keep class cn.jmessage.** {*;}
+-keep class uk.co.senab.** {*;}
+-keep class com.alipay.** {*;}
+-keep class com.zxing.** {*;}
+-keep class com.handmark.** {*;}
+-keep class com.polonium.** {*;}
+-keep class com.amap.** {*;}
+-keep class com.autonavi.** {*;}
+-keep class com.loc.** {*;}
+-keep class org.apache.** {*;}
+-keep class de.greenrobot.** {*;}
+-keep class com.sun.** {*;}
+-keep class jj2000.** {*;}
+-keep class com.jg.** {*;}
+-keep class cn.jpush.** {*;}
+-keep class a.** {*;}
+-keep class b.a.** {*;}
+-keep class com.tencent.** {*;}
+-keep class com.nineoldandroids.** {*;}
+-keep class com.squareup.** {*;}
+-keep class com.alimama.** {*;}
+-keep class com.umeng.** {*;}
+-keep class u.upd.** {*;}
+-keep class com.nostra13.** {*;}
+-keep class com.qq.** {*;}
+-keep class java.** {*;}
+-keep class libcore.** {*;}
+-keep class com.quanjiakanuser.receiver.** {*;}
+-keep class com.androidquanjiakan.activity.main.** {*;}
+-keep class butterknife.** {*;}
+-keep class com.androidquanjiakan.activity.index.main.** {*;}
+
+# butterknife
+-keep class butterknife.** { *; }
+-dontwarn butterknife.internal.**
+-keep class **$$ViewBinder { *; }
+
+-keepclasseswithmembernames class * {
+    @butterknife.* <fields>;
+}
+
+-keepclasseswithmembernames class * {
+    @butterknife.* <methods>;
+}
+
+-keepclassmembers class * {
+   public <init> (org.json.JSONObject);
+}
+
+-keep public class com.quanjiakan.main.R$*{
+public static final int *;
+}
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+
+-keepattributes *Annotation*
+-keepclassmembers class ** {
+    @org.greenrobot.eventbus.Subscribe <methods>;
+}
+-keep enum org.greenrobot.eventbus.ThreadMode { *; }
+
+# Only required if you use AsyncExecutor
+-keepclassmembers class * extends org.greenrobot.eventbus.util.ThrowableFailureEvent {
+    <init>(Java.lang.Throwable);
+}
+
+
+-keepclasseswithmembers class MainActivity {
+    <fields>;
+    <methods>;
+}
+-keepclasseswithmembers class com.androidquanjiakan.activity.video.VideoLivePlayActivity {
+    <methods>;
+}
+
+########### fastjson ##########
+-keep class com.alibaba.fastjson.**{*;}
+-dontwarn com.alibaba.fastjson.**
+###### 避免混淆泛型 #######
+-keepattributes Signature
+
+### greenDAO 3
+-keepclassmembers class * extends org.greenrobot.greendao.AbstractDao {
+public static java.lang.String TABLENAME;
+}
+-keep class **$Properties
+
+# If you do not use SQLCipher:
+-dontwarn org.greenrobot.greendao.database.**
+# If you do not use RxJava:
+-dontwarn rx.**
+
+
+## ksplayer
+-keep class com.ksyun.media.player.**{ *; }
+-dontwarn com.ksyun.media.player.**
+-keep class com.ksy.statlibrary.**{ *;}
+-dontwarn com.ksy.statlibrary.**
+
+
+
+
+
+
+
+

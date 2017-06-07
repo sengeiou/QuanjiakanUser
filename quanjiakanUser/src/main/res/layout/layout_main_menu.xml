@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f6fbfb"
+    >
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size_20"
+        android:layout_marginLeft="@dimen/size_20"
+        android:text="客服电话: 400-5212546"
+        android:textColor="@color/font_color_666666"
+        android:textSize="@dimen/font_14"
+        />
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/hint"
+        android:background="@color/color_f6fbfb"
+        >
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/color_f6fbfb"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="增值服务"
+                    android:textSize="@dimen/font_18"
+                    android:textColor="@color/font_color_333333"
+                    android:layout_marginTop="@dimen/size_22"
+                    android:layout_marginBottom="@dimen/size_10"
+                    android:layout_marginLeft="@dimen/size_30"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_1"
+                    android:background="@color/color_dcdcdc"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:layout_alignParentBottom="true"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/docter"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10"
+                >
+                <ImageView
+                    android:layout_width="@dimen/size_30"
+                    android:src="@drawable/professor"
+                    android:layout_height="@dimen/size_30" />
+
+                <TextView
+                    android:id="@+id/member"
+                    android:layout_width="wrap_content"
+                    android:text="约医护"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/font_12"
+                    android:textColor="#99000000"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/inquiry"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/size_30"
+                    android:src="@drawable/index_icon_ask"
+                    android:layout_height="@dimen/size_30" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="在线问诊"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/font_12"
+                    android:textColor="#99000000"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/child_docter"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/size_30"
+                    android:src="@drawable/phone_doctor"
+                    android:layout_height="@dimen/size_30" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="儿童医生"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/font_12"
+                    android:textColor="#99000000"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/housekeeper"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/size_30"
+                    android:src="@drawable/familyservice"
+                    android:layout_height="@dimen/size_30" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="家政服务"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/font_12"
+                    android:textColor="#99000000"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/child_missing"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/size_30"
+                    android:src="@drawable/index_icon_children"
+                    android:layout_height="@dimen/size_30" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="儿童打拐"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/font_12"
+                    android:textColor="#99000000"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

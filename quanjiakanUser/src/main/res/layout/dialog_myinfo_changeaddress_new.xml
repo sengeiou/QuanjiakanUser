@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ly_myinfo_changeaddress"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/ly_myinfo_changeaddress_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_selector"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_160"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.quanjiakanuser.widget.WheelView
+                android:id="@+id/wv_address_province"
+                android:layout_width="@dimen/size_0"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <com.quanjiakanuser.widget.WheelView
+                android:id="@+id/wv_address_city"
+                android:layout_width="@dimen/size_0"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+            <com.quanjiakanuser.widget.WheelView
+                android:id="@+id/wv_address_setion"
+                android:layout_width="@dimen/size_0"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_25" >
+
+            <TextView
+                android:id="@+id/btn_myinfo_sure"
+                android:layout_width="@dimen/height_77"
+                android:layout_height="@dimen/height_33"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_15"
+                android:gravity="center"
+                android:text="@string/confirm"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/btn_myinfo_cancel"
+                android:layout_width="@dimen/height_77"
+                android:layout_height="@dimen/height_33"
+                android:layout_toLeftOf="@+id/btn_myinfo_sure"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textSize="@dimen/font_16" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

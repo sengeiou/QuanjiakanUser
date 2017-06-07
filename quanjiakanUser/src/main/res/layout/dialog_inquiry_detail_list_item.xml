@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selecter_hollow_white"
+    android:paddingBottom="@dimen/margin_10"
+    android:paddingTop="@dimen/margin_10">
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_15"
+        android:background="@drawable/selecter_inquiry_green"
+        android:paddingLeft="@dimen/size_4"
+        android:paddingRight="@dimen/size_4"
+        android:paddingTop="@dimen/size_1"
+        android:paddingBottom="@dimen/size_1"
+
+        android:text="问"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_16" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/type"
+        android:layout_alignTop="@id/type"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:text="问题内容"
+        android:textColor="@color/font_color_555555"
+        android:textSize="@dimen/font_16" />
+
+</RelativeLayout>

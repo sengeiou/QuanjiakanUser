@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fitsSystemWindows="true" >
+
+    <TextView
+        android:id="@+id/imageDialog_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_title_bar_height"
+        android:drawableLeft="@drawable/back_white"
+        android:drawablePadding="@dimen/margin_10"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/size_10"
+        android:paddingRight="@dimen/size_25"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_medium" />
+
+    <TextView
+        android:id="@+id/imageDialog_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_title_bar_height"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_10"
+        android:gravity="center_vertical"
+        android:text="删除"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_medium" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/imageDialog_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageDialog_cancel"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

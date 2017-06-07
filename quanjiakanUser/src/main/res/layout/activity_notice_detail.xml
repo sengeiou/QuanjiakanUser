@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title"
+        />
+
+    <RelativeLayout
+        android:id="@+id/llt_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/size_14"
+        android:paddingLeft="@dimen/size_14"
+        android:paddingRight="@dimen/size_14"
+        android:layout_below="@+id/layout_title"
+        >
+        <com.androidquanjiakan.view.RoundImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="125dp"
+            android:layout_height="160dp"
+            android:src="@drawable/search_pic_missing"
+            android:scaleType="centerCrop"
+            app:borderRadius="@dimen/size_10"
+            app:type="round"
+            />
+
+        <!--<com.makeramen.roundedimageview.RoundedImageView-->
+
+            <!--android:id="@+id/iv_photo"-->
+            <!--android:layout_width="120dp"-->
+            <!--android:layout_height="160dp"-->
+            <!--android:src="@drawable/search_pic_missing"-->
+
+            <!--/>-->
+        <TextView
+            android:id="@+id/iv_flag"
+            android:layout_below="@+id/iv_photo"
+            android:layout_width="125dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="@dimen/height_12"
+            android:text="寻找中..."
+            android:textColor="#00b2b2"
+            android:gravity="center"
+            android:textSize="@dimen/font_16"
+            android:background="@drawable/search_state_seek"
+            />
+
+        <LinearLayout
+            android:id="@+id/llt_1"
+            android:layout_toRightOf="@+id/iv_photo"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名:"
+                android:textSize="@dimen/font_14"
+                android:textColor="#999999"
+                />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:text="张香香"
+                android:textSize="@dimen/font_12"
+                android:textColor="#666666"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_2"
+            android:layout_below="@+id/llt_1"
+            android:layout_toRightOf="@+id/iv_photo"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性别:"
+                android:textSize="@dimen/font_14"
+                android:textColor="#999999"
+                />
+
+            <TextView
+                android:id="@+id/tv_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:text="女"
+                android:textSize="@dimen/font_12"
+                android:textColor="#666666"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_3"
+            android:layout_below="@+id/llt_2"
+            android:layout_toRightOf="@+id/iv_photo"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="年龄:"
+                android:textSize="@dimen/font_14"
+                android:textColor="#999999"
+                />
+
+            <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:text="4"
+                android:textSize="@dimen/font_12"
+                android:textColor="#666666"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_4"
+            android:layout_below="@+id/llt_3"
+            android:layout_toRightOf="@+id/iv_photo"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身高:"
+                android:textSize="@dimen/font_14"
+                android:textColor="#999999"
+                />
+
+            <TextView
+                android:id="@+id/tv_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:text="90cm"
+                android:textSize="@dimen/font_12"
+                android:textColor="#666666"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llt_5"
+            android:layout_below="@+id/llt_4"
+            android:layout_toRightOf="@+id/iv_photo"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="体重:"
+                android:textSize="@dimen/font_14"
+                android:textColor="#999999"
+                />
+
+            <TextView
+                android:id="@+id/tv_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:text="30kg"
+                android:textSize="@dimen/font_12"
+                android:textColor="#666666"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_6"
+            android:layout_below="@+id/llt_5"
+            android:layout_toRightOf="@+id/iv_photo"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="走失时间:"
+                android:textSize="@dimen/font_14"
+                android:textColor="#999999"
+                />
+
+            <TextView
+                android:id="@+id/tv_miss_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:text="2016-08-22 07:22"
+                android:textSize="@dimen/font_12"
+                android:textColor="#666666"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_7"
+            android:layout_below="@+id/llt_6"
+            android:layout_toRightOf="@+id/iv_photo"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="走失地点:"
+                android:textSize="@dimen/font_14"
+                android:textColor="#999999"
+                />
+
+            <TextView
+                android:id="@+id/tv_miss_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:text="广州周门北路28号彩虹小学"
+                android:textSize="@dimen/font_12"
+                android:textColor="#666666"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_8"
+            android:layout_below="@+id/llt_7"
+            android:layout_toRightOf="@+id/iv_photo"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系人:"
+                android:textSize="@dimen/font_14"
+                android:textColor="#999999"
+                />
+
+            <TextView
+                android:id="@+id/tv_gender_missing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:text="张先生"
+                android:textSize="@dimen/font_12"
+                android:textColor="#666666"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_9"
+            android:layout_below="@+id/llt_8"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/iv_flag"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系电话:"
+                android:textSize="@dimen/font_14"
+                android:textColor="#999999"
+                />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:text="15889492686"
+                android:textSize="@dimen/font_12"
+                android:textColor="#666666"
+                />
+
+            <ImageView
+                android:id="@+id/missing_call"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/search_ico_phone"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llt_10"
+            android:layout_below="@+id/llt_9"
+            android:layout_toRightOf="@+id/iv_flag"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="衣着描述:"
+                android:textSize="@dimen/font_14"
+                android:textColor="#999999"
+                />
+
+            <TextView
+                android:id="@+id/tv_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:text="香香走失时穿着一件白色带五彩的短袖T，带着黄色的帽子，扎着两个小辫"
+                android:textSize="@dimen/font_12"
+                android:textColor="#666666"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llt_below"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_below="@+id/llt_0"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <View
+            android:id="@+id/v_devider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_20"
+            android:background="#f8f8f8">
+        </View>
+
+        <LinearLayout
+            android:id="@+id/llt_leaving_msg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40"
+
+            >
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:id="@+id/tv_leaving_msg"
+                    android:gravity="center"
+                    android:layout_toRightOf="@+id/iv_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="留言"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:textSize="@dimen/font_16"
+                    android:drawableLeft="@drawable/search_ioc_message"
+                    android:textColor="#333333"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_msg_num"
+                    android:layout_toRightOf="@id/tv_leaving_msg"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(暂无留言)"
+
+                    />
+                <TextView
+                    android:id="@+id/more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更多"
+                    android:textSize="10sp"
+                    android:textColor="#999999"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:drawableRight="@drawable/message_more"
+                    android:layout_centerVertical="true"
+                    />
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e7e7e7"
+            android:layout_alignParentBottom="true"
+            />
+
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="@null"
+            android:dividerHeight="@dimen/size_0"
+            android:fastScrollEnabled="false"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none" />
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

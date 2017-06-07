@@ -1,0 +1,96 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    
+	<include 
+	    android:id="@+id/layout_title"
+	    layout="@layout/layout_title"
+	    />
+    
+	<RelativeLayout 
+	    android:id="@+id/layout_info"
+	    android:layout_width="wrap_content"
+	    android:layout_height="@dimen/height_150"
+	    android:background="@color/white"
+	    android:layout_below="@+id/layout_title"
+	    android:layout_centerHorizontal="true"
+	    >
+	    <ImageView 
+	        android:id="@+id/image"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/payment_success"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="@dimen/size_12"
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/tv_pay_channel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/hei222"
+	        android:text="微信支付成功\n￥98.00元"
+	        android:layout_toRightOf="@+id/image"
+	        android:layout_marginLeft="@dimen/size_6"
+			android:layout_marginRight="@dimen/size_12"
+			android:layout_centerVertical="true"
+	        android:textSize="@dimen/font_16"
+
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/tv_total_fee"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/hei222"
+	        android:text="￥98.00元"
+	        android:layout_below="@+id/tv_pay_channel"
+	        android:layout_alignLeft="@+id/tv_pay_channel"
+	        android:textSize="18sp"
+	        android:textStyle="bold"
+	        android:layout_marginRight="@dimen/size_12"
+			android:visibility="gone"
+	        />
+	    
+	</RelativeLayout>
+	
+	<LinearLayout
+	    android:id="@+id/layout_btns"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/layout_info"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="@dimen/size_8"
+	    >
+	    
+	    <TextView
+	        android:id="@+id/tv_orderlist"
+	        style="@style/textview_submit"
+	        android:layout_weight="1"
+	        android:layout_width="@dimen/size_0"
+	        android:text="查看订单"
+			android:layout_marginLeft="@dimen/size_8"
+			android:layout_marginRight="@dimen/size_4"
+	        android:background="@drawable/selecter_hollow_green_transport"
+	        android:padding="@dimen/size_1"
+	        android:textColor="@color/color_title_green"
+	        />
+		<TextView
+			android:id="@+id/tv_homepage"
+			style="@style/textview_submit"
+			android:layout_weight="1"
+			android:layout_width="@dimen/size_0"
+			android:text="回到首页"
+			android:layout_marginLeft="@dimen/size_4"
+			android:layout_marginRight="@dimen/size_8"
+			android:background="@drawable/shape_corner_maincolor"
+			/>
+	    
+	</LinearLayout>
+	
+	
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title"
+        />
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/map"
+        android:layout_below="@id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <ListView
+        android:id="@+id/device_container"
+        android:layout_below="@id/layout_title"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/size_18"
+        android:layout_marginRight="@dimen/size_10"
+        android:layout_marginBottom="@dimen/height_100"
+        android:layout_width="@dimen/size_65"
+        android:divider="@color/transparent"
+        android:dividerHeight="@dimen/size_0"
+        android:layout_height="match_parent">
+
+    </ListView>
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title" />
+
+    <TextView
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:background="@drawable/selecter_hollow_green_transport"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/margin_10"
+        android:paddingLeft="@dimen/margin_30"
+        android:paddingRight="@dimen/margin_30"
+        android:paddingTop="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5"
+        android:text="@string/docter_out_go_service_order_now"
+        android:textColor="@color/color_title_green"
+        android:textSize="@dimen/font_18"
+        android:visibility="gone"
+        />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/order"
+        android:layout_below="@+id/layout_title">
+
+        <LinearLayout
+            android:id="@+id/layout_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/height_100"
+                android:layout_height="@dimen/height_100"
+                android:src="@drawable/ic_launcher"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您的订单已完成"
+                android:textSize="@dimen/font_16"
+                android:textColor="@color/font_color_333333"
+                android:layout_marginTop="@dimen/margin_15"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完成时间:2016-10-10 19:20"
+                android:textSize="@dimen/font_16"
+                android:textColor="@color/font_color_999999"
+                android:layout_marginTop="@dimen/margin_15"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/height_55"
+                >
+                <TextView
+                    android:id="@+id/back_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="返回首页"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_16"
+                    android:padding="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:background="@drawable/selecter_inquiry_green"
+                    android:drawableLeft="@drawable/home_icon"
+                    android:drawablePadding="@dimen/margin_5"
+                    />
+                <TextView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的订单"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_16"
+                    android:padding="@dimen/margin_10"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:background="@drawable/selecter_inquiry_green"
+                    android:drawableLeft="@drawable/order_icon"
+                    android:drawablePadding="@dimen/margin_5"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>	

@@ -1,0 +1,53 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/size_12"
+    android:paddingBottom="@dimen/size_18"
+    android:background="@drawable/bg_input"
+    >
+    <TextView 
+        android:id="@+id/tv_line"
+        android:layout_width="@dimen/size_4"
+        android:layout_height="@dimen/size_18"
+        android:background="@color/maincolor"
+        />
+    
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/hei222" 
+        android:textSize="@dimen/font_15"
+        android:layout_toLeftOf="@+id/tv_status"
+        android:text="喉咙有点痛，咳嗽(男，28岁)"
+        android:layout_marginLeft="@dimen/size_8"
+        android:layout_toRightOf="@+id/tv_line"
+        />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/qianhei" 
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/font_14"
+        android:text="已回复"
+        android:layout_marginRight="@dimen/size_4"
+        />
+
+    <TextView 
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/qianhei"
+        android:textSize="@dimen/font_14"
+        android:text="01月25号|耳鼻喉科|免费"
+        android:layout_below="@+id/tv_status"
+        android:layout_marginTop="@dimen/size_10"
+        android:layout_marginLeft="@dimen/size_12"
+        />
+    
+</RelativeLayout>

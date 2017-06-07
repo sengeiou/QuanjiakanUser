@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title"
+        />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="18sp"
+        android:text="为保障安全,绑定银行卡需要短信确认,验证码已发送至您手机,请注意查收并进行相关操作"/>
+
+
+    <TextView
+        style="@style/textview_line"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_code"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/et_username">
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_corner_white_white"
+            android:hint="请输入验证码"
+            android:gravity="center"
+            android:textSize="@dimen/font_medium"
+            android:drawablePadding="4dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_yanzhengma"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_corner_maincolor"
+            android:layout_alignRight="@+id/et_code"
+            android:layout_alignTop="@+id/et_code"
+            android:layout_marginLeft="10dp"
+            android:text="获取验证码"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/font_big"
+            />
+    </LinearLayout>
+
+    <TextView
+        style="@style/textview_line"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_gravity="center"
+        android:text="下一步"
+        android:textSize="18sp"
+        android:textColor="@drawable/selector_textcolor"
+        android:background="@drawable/selector_btnpress"/>
+
+
+</LinearLayout>

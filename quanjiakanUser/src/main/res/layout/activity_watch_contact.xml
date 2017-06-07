@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    >
+
+    <include layout="@layout/layout_title"
+        android:id="@+id/title"
+        />
+
+    <LinearLayout
+        android:id="@+id/llt_front"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#eef3f6"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/iv_watch"
+                android:layout_width="@dimen/height_85"
+                android:layout_height="@dimen/height_85"
+                android:layout_marginTop="@dimen/size_18"
+                android:layout_marginBottom="@dimen/size_18"
+                android:src="@drawable/list_pic_atch" />
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/size_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                >
+
+                <LinearLayout
+                    android:id="@+id/llt_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_11"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="手表主人："
+                        android:textSize="@dimen/font_14"
+                        android:textColor="@color/font_color_666666" />
+
+                    <TextView
+                        android:id="@+id/tv_watch_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_14"
+                        android:textColor="@color/font_color_666666" />
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/llt_author"
+                    android:layout_marginLeft="@dimen/size_11"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="手表号码："
+                        android:textSize="@dimen/font_14"
+                        android:textColor="@color/font_color_666666" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_14"
+                        android:textColor="@color/font_color_666666"
+                        android:id="@+id/tv_watch_number" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llt_button"
+        android:layout_below="@id/llt_front"
+        android:background="@color/main_bg_color"
+        >
+
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:background="@color/white"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/llt_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="@color/white"
+        >
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="@dimen/height_270"
+            android:layout_height="@dimen/size_40"
+            android:layout_marginTop="@dimen/size_22"
+            android:layout_marginBottom="@dimen/size_22"
+            android:text="添加手表联系人"
+            android:textColor="@color/color_btn_green"
+            android:background="@drawable/selecter_btn_bac_green"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

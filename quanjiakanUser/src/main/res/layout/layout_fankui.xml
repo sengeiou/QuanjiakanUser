@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color" >
+
+    <include 
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title"
+        />
+    
+   <EditText 
+       android:id="@+id/et_mail"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/selecter_white_round_10"
+       android:paddingLeft="@dimen/size_15"
+       android:paddingRight="@dimen/size_15"
+       android:paddingTop="@dimen/margin_10"
+       android:paddingBottom="12dp"
+       android:layout_marginTop="@dimen/size_8"
+       android:layout_marginBottom="@dimen/size_8"
+       android:gravity="center_vertical"
+       android:layout_below="@+id/layout_title"
+       android:hint="请输入联系邮箱"
+       android:textSize="@dimen/font_medium"
+       
+       /> 
+       
+   <EditText 
+       android:id="@+id/et_content"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/selecter_white_round_10"
+       android:paddingLeft="@dimen/size_15"
+       android:paddingRight="@dimen/size_15"
+       android:paddingTop="@dimen/margin_10"
+       android:paddingBottom="12dp"
+       android:layout_marginTop="@dimen/size_8"
+       android:gravity="top"
+       android:layout_below="@+id/et_mail"
+       android:hint="请输入建议反馈内容"
+       android:textSize="@dimen/font_medium"   
+       android:lines="10"    
+       /> 
+       
+   <TextView 
+       android:id="@+id/tv_submit"
+       android:layout_margin="@dimen/size_10"
+       android:layout_width="@dimen/height_150"
+       android:layout_height="@dimen/height_40"
+       android:background="@drawable/selecter_hollow_green_transport"
+       android:textSize="@dimen/font_14"
+       android:textColor="@color/color_title_green"
+       android:gravity="center"
+       android:layout_centerHorizontal="true"
+       android:layout_alignParentBottom="true"
+       android:text="提交"
+       />
+   
+
+</RelativeLayout>

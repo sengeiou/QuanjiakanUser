@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ly_myinfo_changeaddress"
+    android:layout_width="@dimen/height_300"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_line"
+        android:layout_width="@dimen/height_300"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_27"
+        android:layout_marginRight="@dimen/margin_27"
+        android:background="@drawable/bg_dialog_selector"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_15"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/font_color_333333"
+            android:text="温馨提示"
+            android:textSize="@dimen/font_20" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_color_999999"
+                android:text="手表未联网原因:"
+                android:textSize="@dimen/font_14"
+                android:layout_marginBottom="@dimen/size_5"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_color_999999"
+                android:text="1、手表处关机状态"
+                android:textSize="@dimen/font_14"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_color_999999"
+                android:text="2、手表欠费停机"
+                android:textSize="@dimen/font_14"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_color_999999"
+                android:text="3、手表当前网络信号不好，无信号"
+                android:textSize="@dimen/font_14"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_color_999999"
+                android:text="如果以上情况都不是,您可以尝试重启手表或复位"
+                android:textSize="@dimen/font_14"
+                />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_10" >
+
+            <TextView
+                android:id="@+id/btn_cancel"
+                android:layout_width="@dimen/height_100"
+                android:layout_height="@dimen/height_40"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selecter_hollow_gray"
+                android:gravity="center"
+                android:text="知道了"
+                android:textSize="@dimen/font_18"
+                android:textColor="@color/color_btn_look_ing"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

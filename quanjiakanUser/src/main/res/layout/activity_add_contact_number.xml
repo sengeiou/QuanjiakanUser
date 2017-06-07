@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_title"/>
+
+    <ImageView
+        android:id="@+id/iv_icon_add"
+        android:layout_width="@dimen/size_65"
+        android:layout_height="@dimen/size_65"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/size_18"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系人："
+            android:textSize="@dimen/size_17"
+            android:textColor="@color/font_color_333333"
+            />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="爸爸"
+            android:textSize="@dimen/size_17"
+            android:textColor="@color/font_color_333333"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="270dp"
+        android:layout_height="@dimen/size_40"
+        android:layout_marginTop="@dimen/size_22"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/selecter_btn_bac_green"
+        >
+
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:hint="联系人电话号码"
+            android:background="@null"
+            android:textSize="@dimen/size_14"
+            android:digits="1234567890"
+            android:textColor="@color/font_color_999999"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_11"
+            />
+
+        <ImageView
+            android:id="@+id/sys_contact"
+            android:layout_width="20dp"
+            android:layout_height="22dp"
+            android:src="@drawable/contact_ico_book"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_5"
+            android:layout_marginTop="@dimen/size_6"
+            android:layout_marginBottom="@dimen/size_6"
+            />
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="270dp"
+        android:layout_height="@dimen/size_40"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/size_30"
+        android:text="保存"
+        android:textSize="@dimen/size_18"
+        android:textColor="@color/color_btn_green"
+        android:background="@drawable/selecter_btn_bac_green"
+        />
+
+
+</LinearLayout>

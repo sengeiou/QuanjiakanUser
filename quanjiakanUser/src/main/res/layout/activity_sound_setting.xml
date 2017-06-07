@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/layout_title"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginTop="@dimen/size_18"
+        android:text="手表来电声音"
+        android:textColor="@color/font_color_666666"
+        android:textSize="@dimen/font_14"
+        />
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/size_14"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="声音"
+            android:textColor="@color/font_color_333333"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/font_16"
+            />
+
+        <ToggleButton
+            android:id="@+id/btn_voice"
+            android:layout_width="@dimen/size_45"
+            android:layout_height="@dimen/size_25"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/edit_btn_open"
+            android:textOn=""
+            android:textOff=""
+            android:checked="true"
+            android:layout_marginTop="@dimen/size_16"
+            android:layout_marginRight="@dimen/size_20"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/font_color_EEEEEE"
+            android:layout_marginRight="@dimen/size_20"
+            android:layout_marginLeft="@dimen/size_20"
+            />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="振动"
+            android:textColor="@color/font_color_333333"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/font_16"
+            />
+
+        <ToggleButton
+            android:id="@+id/btn_vibration"
+            android:layout_width="@dimen/size_45"
+            android:layout_height="@dimen/size_25"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/edit_btn_open"
+            android:textOn=""
+            android:textOff=""
+            android:checked="true"
+            android:layout_marginTop="@dimen/size_16"
+            android:layout_marginRight="@dimen/size_20"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/font_color_EEEEEE"
+            android:layout_marginRight="@dimen/size_20"
+            android:layout_marginLeft="@dimen/size_20"
+            />
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginTop="@dimen/size_18"
+        android:text="手表短信声音"
+        android:textColor="@color/font_color_666666"
+        android:textSize="@dimen/font_14"
+        />
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/size_11"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="声音"
+            android:textColor="@color/font_color_333333"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/font_16"
+            />
+
+        <ToggleButton
+            android:id="@+id/btn_msg_voice"
+            android:layout_width="@dimen/size_45"
+            android:layout_height="@dimen/size_25"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/edit_btn_open"
+            android:textOn=""
+            android:textOff=""
+            android:checked="true"
+            android:layout_marginTop="@dimen/size_16"
+            android:layout_marginRight="@dimen/size_20"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/font_color_EEEEEE"
+            android:layout_marginRight="@dimen/size_20"
+            android:layout_marginLeft="@dimen/size_20"
+            />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="振动"
+            android:textColor="@color/font_color_333333"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/font_16"
+            />
+
+        <ToggleButton
+            android:id="@+id/btn_msg_vibration"
+            android:layout_width="@dimen/size_45"
+            android:layout_height="@dimen/size_25"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/edit_btn_open"
+            android:textOn=""
+            android:textOff=""
+            android:checked="true"
+            android:layout_marginTop="@dimen/size_16"
+            android:layout_marginRight="@dimen/size_20"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/font_color_EEEEEE"
+            android:layout_marginRight="@dimen/size_20"
+            android:layout_marginLeft="@dimen/size_20"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

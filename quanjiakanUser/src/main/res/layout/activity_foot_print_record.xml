@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@color/colorPureWhite">
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title"
+        />
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/map"
+        android:layout_below="@id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rlt_foot_record"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_42"
+        android:layout_alignParentBottom="true"
+        android:background="@color/divider_f8f8f8"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            >
+            <ImageView
+                android:layout_width="@dimen/size_20"
+                android:layout_height="@dimen/size_20"
+                android:src="@drawable/footprint_ioc_enclosure"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:text="电子围栏"
+                android:textSize="@dimen/font_18"
+                android:textColor="@color/color_btn_green"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

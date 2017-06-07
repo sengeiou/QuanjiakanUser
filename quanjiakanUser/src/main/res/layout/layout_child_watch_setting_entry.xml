@@ -1,0 +1,249 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_1"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:orientation="vertical">
+            <!--android:drawableLeft="@drawable/ic_bind_device"-->
+            <RelativeLayout
+                android:id="@+id/baby_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/size_15"
+                    android:paddingLeft="@dimen/size_10"
+                    android:paddingTop="@dimen/size_15"
+                    android:text="宝贝名片"
+                    android:drawableLeft="@drawable/watch_child_entry_icon"
+                    android:drawablePadding="@dimen/size_5"
+                    android:textColor="@color/hei222"
+                    android:textSize="@dimen/font_medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="@dimen/margin_5"
+                    android:drawableRight="@drawable/pay_my_address_arrow"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/size_15"
+                    android:paddingLeft="@dimen/size_15"
+                    android:paddingRight="@dimen/margin_20"
+                    android:paddingTop="@dimen/size_15"
+                    android:textColor="@color/color_title_green"
+                    android:textSize="@dimen/font_medium" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/tv_ebean_div"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@color/font_color_EEEEEE" />
+
+            <RelativeLayout
+                android:id="@+id/watch_manager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/size_15"
+                    android:paddingLeft="@dimen/size_10"
+                    android:paddingTop="@dimen/size_15"
+                    android:text="手表管理"
+                    android:drawableLeft="@drawable/watch_child_entry_icon"
+                    android:drawablePadding="@dimen/size_5"
+                    android:textColor="@color/hei222"
+                    android:textSize="@dimen/font_medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="@dimen/margin_5"
+                    android:drawableRight="@drawable/pay_my_address_arrow"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/size_15"
+                    android:paddingLeft="@dimen/size_15"
+                    android:paddingRight="@dimen/margin_20"
+                    android:paddingTop="@dimen/size_15"
+                    android:textColor="@color/color_title_green"
+                    android:textSize="@dimen/font_medium" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/tv_level_div"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@color/font_color_EEEEEE" />
+
+            <RelativeLayout
+                android:id="@+id/screen_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/size_15"
+                    android:paddingLeft="@dimen/size_10"
+                    android:paddingTop="@dimen/size_15"
+                    android:text="待机亮屏时间设置"
+                    android:drawableLeft="@drawable/watch_child_entry_icon"
+                    android:drawablePadding="@dimen/size_5"
+                    android:textColor="@color/hei222"
+                    android:textSize="@dimen/font_medium" />
+
+                <TextView
+                    android:id="@+id/arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="@dimen/margin_5"
+                    android:drawableRight="@drawable/pay_my_address_arrow"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/size_15"
+                    android:paddingLeft="@dimen/size_5"
+                    android:paddingRight="@dimen/margin_20"
+                    android:paddingTop="@dimen/size_15"
+                    android:textColor="@color/color_title_green"
+                    android:textSize="@dimen/font_medium" />
+
+                <TextView
+                    android:id="@+id/time_set"
+                    android:layout_toLeftOf="@id/arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="30s"
+                    />
+            </RelativeLayout>
+
+
+            <View
+                android:id="@+id/tv_device_div"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@color/font_color_EEEEEE" />
+
+            <RelativeLayout
+                android:id="@+id/bind_unbind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/size_15"
+                    android:paddingLeft="@dimen/size_10"
+                    android:paddingTop="@dimen/size_15"
+                    android:text="绑定与解绑"
+                    android:drawableLeft="@drawable/watch_child_entry_icon"
+                    android:drawablePadding="@dimen/size_5"
+                    android:textColor="@color/hei222"
+                    android:textSize="@dimen/font_medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="@dimen/margin_5"
+                    android:drawableRight="@drawable/pay_my_address_arrow"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/size_15"
+                    android:paddingLeft="@dimen/size_15"
+                    android:paddingRight="@dimen/margin_20"
+                    android:paddingTop="@dimen/size_15"
+                    android:textColor="@color/color_title_green"
+                    android:textSize="@dimen/font_medium" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/tv_qingjingmoshi_div"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@color/font_color_EEEEEE" />
+
+            <!--android:drawableLeft="@drawable/ic_number"
+
+            android:drawablePadding="6dp"-->
+
+            <RelativeLayout
+                android:id="@+id/watch_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/size_15"
+                    android:paddingLeft="@dimen/size_10"
+                    android:paddingTop="@dimen/size_15"
+                    android:text="手表信息"
+                    android:drawableLeft="@drawable/watch_child_entry_icon"
+                    android:drawablePadding="@dimen/size_5"
+                    android:textColor="@color/hei222"
+                    android:textSize="@dimen/font_medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="@dimen/margin_5"
+                    android:drawableRight="@drawable/pay_my_address_arrow"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/size_15"
+                    android:paddingLeft="@dimen/size_15"
+                    android:paddingRight="@dimen/margin_20"
+                    android:paddingTop="@dimen/size_15"
+                    android:textColor="@color/color_title_green"
+                    android:textSize="@dimen/font_medium" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/tv_qinqinghaoma_div"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@color/font_color_EEEEEE" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>    
+

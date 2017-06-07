@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rlt_1"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/margin_15"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/llt_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="寻人—"
+                android:textSize="@dimen/font_18"
+                android:textColor="#E74645"
+                />
+
+            <TextView
+                android:id="@+id/tv_name_missing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张香香"
+                android:textSize="@dimen/font_18"
+                android:textColor="#E74645"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_time"
+            android:layout_below="@+id/llt_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发布时间:"
+                android:textSize="@dimen/font_10"
+                android:textColor="#999999"
+                />
+
+            <TextView
+                android:id="@+id/tv_time_publish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_5"
+                android:text="2016-08-22 07:20"
+                android:textSize="@dimen/font_10"
+                android:textColor="#999999"
+                />
+        </LinearLayout>
+
+
+        <!--<com.androidquanjiakan.view.RoundImageView-->
+            <!--android:id="@+id/iv_icon_missing"-->
+            <!--android:layout_below="@+id/llt_time"-->
+            <!--android:layout_width="135dp"-->
+            <!--android:layout_height="@dimen/height_90"-->
+            <!--android:layout_marginTop="@dimen/margin_5"-->
+            <!--android:src="@drawable/record_pic_portrait"-->
+            <!--app:borderRadius="@dimen/size_5"-->
+            <!--app:type="round"-->
+            <!--/>-->
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_icon_missing"
+            android:layout_width="135dp"
+            android:layout_height="@dimen/height_90"
+            android:layout_below="@+id/llt_time"
+            android:layout_marginTop="@dimen/margin_5"
+            android:src="@drawable/record_pic_portrait"
+            app:riv_corner_radius="10dip"
+            app:riv_border_width="1dip"
+            app:riv_border_color="@color/transparent"
+             />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:background="@drawable/record_state_seek"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_15"
+        android:text="寻找中"
+        android:textColor="#00b2b2"
+        android:gravity="center"
+        android:textSize="@dimen/font_14"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_below="@id/status"
+        android:layout_toRightOf="@+id/rlt_1"
+
+        >
+
+
+
+        <LinearLayout
+            android:id="@+id/llt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性别:"
+                android:textSize="@dimen/font_14"
+                android:textColor="#999999"
+                />
+
+            <TextView
+                android:id="@+id/tv_gender_missing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="女"
+                android:textSize="@dimen/font_14"
+                android:textColor="#666666"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/llt_2"
+            android:layout_below="@+id/llt_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="年龄:"
+                android:textSize="@dimen/font_14"
+                android:textColor="#999999"
+                />
+
+            <TextView
+                android:id="@+id/tv_age_missing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="4岁"
+                android:textSize="@dimen/font_14"
+                android:textColor="#666666"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_3"
+            android:layout_below="@id/llt_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身高:"
+                android:textSize="@dimen/font_14"
+                android:textColor="#999999"
+                />
+
+            <TextView
+                android:id="@+id/tv_height_missing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90cm"
+                android:layout_marginLeft="8dp"
+                android:textSize="@dimen/font_14"
+                android:textColor="#666666"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/llt_4"
+            android:layout_below="@id/llt_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="体重:"
+                android:textSize="@dimen/font_14"
+                android:textColor="#999999"
+                />
+
+            <TextView
+                android:id="@+id/tv_weight_missing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30kg"
+                android:layout_marginLeft="8dp"
+                android:textSize="@dimen/font_14"
+                android:textColor="#666666"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/llt_5"
+            android:layout_below="@id/llt_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="走失时间:"
+                android:textSize="@dimen/font_14"
+                android:textColor="#999999"
+                />
+
+            <TextView
+                android:id="@+id/tv_time_missing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016-08-22 07:20"
+                android:layout_marginLeft="8dp"
+                android:textSize="@dimen/font_14"
+                android:textColor="#666666"
+                />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@id/rlt_1"
+        android:id="@+id/divider"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1p"
+        android:background="@color/font_color_CCCCCC" />
+
+</RelativeLayout>

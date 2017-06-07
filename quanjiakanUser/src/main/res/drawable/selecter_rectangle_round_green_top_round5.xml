@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners
+                android:topLeftRadius="@dimen/size_5"
+                android:topRightRadius="@dimen/size_5"
+                android:bottomRightRadius="@dimen/size_0"
+                android:bottomLeftRadius="@dimen/size_0"
+                />
+            <gradient android:startColor="@color/color_title_green" android:endColor="@color/color_title_green"/>
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <corners
+                android:topLeftRadius="@dimen/size_5"
+                android:topRightRadius="@dimen/size_5"
+                android:bottomRightRadius="@dimen/size_0"
+                android:bottomLeftRadius="@dimen/size_0"
+                />
+            <stroke
+                android:color="@color/color_title_green"
+                android:dashWidth="@dimen/size_1"
+                />
+            <gradient android:startColor="@color/color_title_green" android:endColor="@color/color_title_green"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners
+                android:topLeftRadius="@dimen/size_5"
+                android:topRightRadius="@dimen/size_5"
+                android:bottomRightRadius="@dimen/size_0"
+                android:bottomLeftRadius="@dimen/size_0"
+                />
+            <gradient android:startColor="@color/color_title_green" android:endColor="@color/color_title_green"/>
+            <stroke
+                android:color="@color/color_title_green"
+                android:dashWidth="@dimen/size_1"
+                />
+        </shape>
+    </item>
+</selector>

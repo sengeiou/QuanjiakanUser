@@ -1,0 +1,131 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    >
+    
+    <ImageView 
+        android:id="@+id/image"
+        android:layout_width="@dimen/height_120"
+        android:layout_height="@dimen/height_120"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_gray"
+        android:layout_marginTop="@dimen/height_50"
+        />
+    
+    <EditText 
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_15"
+        android:background="@drawable/inputbox_1"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="@dimen/height_30"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginRight="@dimen/size_15"
+        android:textSize="@dimen/font_medium"
+        android:hint="请输入用户名/手机号"
+        android:paddingLeft="@dimen/size_8"
+        android:drawablePadding="@dimen/size_8"
+        android:drawableLeft="@drawable/login_phone"
+        />
+    
+    <EditText 
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45"
+        android:background="@drawable/inputbox_1"
+        android:layout_below="@+id/et_username"
+        android:layout_marginTop="@dimen/size_10"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginRight="@dimen/size_15"
+        android:hint="请输入密码"
+        android:textSize="@dimen/font_medium"
+		android:paddingLeft="@dimen/size_8"
+        android:drawablePadding="@dimen/size_8"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/login_code"
+        
+        />
+    
+    <Button 
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40"
+        android:background="@drawable/shape_corner_maincolor"
+        android:layout_below="@+id/et_password"
+        android:layout_marginTop="@dimen/height_30"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="医生登录"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginRight="@dimen/size_15"
+        android:onClick="onClick"
+        />
+    
+    
+    <LinearLayout 
+        android:id="@+id/layout_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/btn_submit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size_16"
+        >
+        <TextView 
+            android:id="@+id/tv_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_15"
+            android:textColor="@color/qianhei"
+            android:text="注册帐号"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_fenge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_15"
+            android:textColor="@color/qianhei"
+            android:text="|"
+            android:layout_marginLeft="@dimen/size_8"
+            android:layout_marginRight="@dimen/size_8"
+            />
+        
+        <TextView 
+            android:id="@+id/tv_findpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_15"
+            android:textColor="@color/qianhei"
+            android:text="找回密码"
+            />        
+        
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/tv_doctor"
+        style="@style/textview_left_right_button"
+        android:text="医生登录"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layout_bottom"
+        android:layout_marginTop="@dimen/size_15"
+        android:textSize="@dimen/font_12"
+        android:visibility="gone"
+        />
+    
+    <TextView 
+        android:id="@+id/tv_copyright"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="全家康健康管理系统©copyright 2016"
+        style="@style/textview_key"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/font_10"
+        />
+    
+</RelativeLayout>    
+

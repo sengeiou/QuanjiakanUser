@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:id="@+id/item_main_entry_image"
+        android:layout_width="@dimen/size_10"
+        android:layout_height="@dimen/size_10"
+        android:src="@drawable/selecter_rectangle_around_black_09"
+        android:layout_marginRight="@dimen/size_5"
+        android:layout_marginLeft="@dimen/size_5"
+        />
+</RelativeLayout>

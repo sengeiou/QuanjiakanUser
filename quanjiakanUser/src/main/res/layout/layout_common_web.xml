@@ -1,0 +1,32 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical"
+    >
+    <include
+        android:id="@+id/title_header"
+        layout="@layout/layout_title"/>
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_below="@id/title_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_3"
+        style="@style/ProgressBar_Mini"
+        android:indeterminate="false"
+        />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_below="@id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

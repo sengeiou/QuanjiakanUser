@@ -1,0 +1,50 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_80"
+    >
+
+    <ImageView 
+        android:id="@+id/image"
+        android:layout_width="@dimen/height_60"
+        android:layout_height="@dimen/height_60"
+        android:src="@drawable/ic_doctor"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginBottom="@dimen/margin_10"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_toRightOf="@+id/image"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/size_15"
+        android:text="张杰"
+        android:textColor="@color/hei222"
+        android:textSize="@dimen/font_20"
+        />
+
+    <TextView
+        android:id="@+id/tv_scene"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_name"
+        android:text="情景模式1"
+        android:textColor="@color/qianhei"
+        android:textSize="@dimen/font_16"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/size_16"
+        />
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1p"
+        android:background="@color/colorAlphaBlack_11"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

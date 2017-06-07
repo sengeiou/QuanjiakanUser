@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.quanjiakan.main"
+    android:versionCode="25"
+    android:versionName="v1.0.3.1">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="22" />
+
+    <!-- Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!--
+-->
+    <permission
+        android:name="com.quanjiakan.main.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.androidquanjiakan.database.TableProvider" />
+    <!-- Required 一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.quanjiakan.main.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <!-- JMessage Demo required for record audio -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- 【常用】 信鸽SDK所需权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 二维码扫描 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+    <application
+        android:name="com.androidquanjiakan.base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_user"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="a6b7c79d8002573f7ec07c35f2fff95f" />
+        <!--
+        a6b7c79d8002573f7ec07c35f2fff95f
+        发布时,要改成这个
+
+
+        bc885d20bd29688b58242c1bcd9b0e4a
+
+        5f909b6559d25bd39c198554e394e591
+
+        2a37474b6781fd889b7fc53e0c60c530
+        -->
+
+        <!-- com.androidquanjiakan.activity.index.LoadingActivity -->
+        <activity
+            android:name="com.androidquanjiakan.activity.index.WelcomeActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.androidquanjiakan.activity.common.CommonWebEntryActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- cn.jmessage.android.uikit.multiselectphotos.AlbumListActivity -->
+        <activity
+            android:name="cn.jmessage.android.uikit.chatting.ChatActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.jmessage.android.uikit.multiselectphotos.AlbumListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.jmessage.android.uikit.multiselectphotos.AlbumListActivity_Single"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.jmessage.android.uikit.multiselectphotos.PickPictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.jmessage.android.uikit.multiselectphotos.BrowserViewPagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.common.ImageViewerActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.group.GroupChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.group.GroupDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.group.GroupChatListActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- **************************************************************************************************** -->
+
+        <activity
+            android:name="com.androidquanjiakan.activity.MapActivity"
+            android:configChanges="orientation|keyboardHidden|keyboard|navigation"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity=""
+            android:theme="@style/FullScreenTheme" />
+        <activity
+            android:name="com.androidquanjiakan.activity.PaymentResultActivity"
+            android:screenOrientation="portrait" />
+        <!-- SceneModuleDeviceListActivity -->
+
+        <!-- ****************************************************************************************** -->
+        <activity
+            android:name="com.androidquanjiakan.activity.index.phonedocter.ConsultantActivity_PhoneDoctor"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.phonedocter.ConsultantActivity_PhoneCall"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.index.volunteer.VolunteerEntryActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.index.volunteer.VolunteerPublishHistoryActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.index.volunteer.VolunteerCreateActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.index.volunteer.VolunteerHelpDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.index.out.ConsultantActivity_GoOut_Entry"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.index.out.ConsultantActivity_GoOut_Order"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.out.ConsultantActivity_GoOut_Order_Take"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.out.ConsultantActivity_GoOut_Order_Publish"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.out.ConsultantActivity_GoOut_Order_Complete"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.out.ConsultantActivity_GoOut_Locate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.out.ConsultantActivity_GoOut_Locate_backup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.housekeeper.HouseKeeperListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.index.MainEntryMapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.doctor.PersonalDoctorListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.devices.DNAInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.watch_child.ChildVoiceChatActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.watch_child.WatchChildEntryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.watch_old.WatchOldEntryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.watch_child.WatchChildFreshLocationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.index.watch_child.WatchChildFreshLocationActivity_new"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.index.SignupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.index.SigninActivity_mvp"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.FindPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.doctor.DoctorEvaluateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.index.GuidePageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.doctor.ConsultantEnterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.doctor.ConsultantEnterActivity_Classify"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.main.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.housekeeper.HouseKeeperDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.devices.CaseHistoryPicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.devices.CaseHistoryPicViewerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.housekeeper.HouseKeeperOrderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.index.free.FreeInquiryActivity_SendPatientData"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.free.FreeInquiryActivity_CreatePatientData"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.free.FreeInquiryActivity_EditPatientData"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.doctor.DoctorDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.free.FreeInquiryActivity_CreatePatientProblem"
+            android:screenOrientation="portrait" />
+        <!-- **********  android:windowSoftInputMode="adjustPan"   ******************************************************************************** -->
+        <activity
+            android:name="com.androidquanjiakan.activity.video.VideoEntryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.video.VideoDemandPlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.video.VideoDemandCommendListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.video.VideoDemandCommendDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.video.VideoLivePlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.video.VideoLivePlayActivity_backup"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection"
+            android:launchMode="singleTop" />
+
+        <!-- **********  android:windowSoftInputMode="adjustPan"   ******************************************************************************** -->
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.insure.InsuranceListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.health.CaseHistoryPicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.health.CaseHistoryPicViewerActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.health.CaseHistoryAddPicActivity"
+            android:screenOrientation="portrait" />
+        s        <!--<activity
+            android:name="com.androidquanjiakan.activity.setting.missing.MissingListActivity_back"
+            android:screenOrientation="portrait" />-->
+
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.concern.ConcernListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.wallet.CheckPasswordActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.message.FreeInquiryActivity_AppendPatientProblem_new"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.wallet.AddBankcardActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.wallet.AddBankcardStep1Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.wallet.AddBankcardStep2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.wallet.AddBankcardStep3Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.wallet.BankcardEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.wallet.GetBandcardListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.wallet.MyMoneyActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.wallet.WithdrawMoneyActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.insure.InsuranceAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.insure.InsuranceDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.order.HouseKeeperOrderDetailActivity"
+            android:screenOrientation="portrait" />`
+
+        <!-- ***************************************************************************************** -->
+        <activity
+            android:name="com.androidquanjiakan.activity.index.bind.DevicesBindActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.index.bind.DevicesBindStateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.index.watch_child.WatchCaseHistoryPicActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.watch_child.WatchCaseHistoryAddPicActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.watch_child.WatchCaseHistoryPicViewerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.index.watch_child.DigitalFanceActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.index.watch_child.DigitalFanceActivity_new"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.index.watch_old.DigitalFanceOldActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.index.watch_child.ChildWatchSettingEntryActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.index.watch_child.ChildWatchCardActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- ***************************************************************************************** -->
+
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.other.FeedbackActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.order.HouseKeeperOrderHistoryListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.order.OutInquiryListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.SettingEntryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.ebean.EBeanChargeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.giftrecord.GiftRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.ebean.EBeanChargeHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.ProblemDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.delivery.DeliveryAddressActivity_Add"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.delivery.DeliveryAddressActivity_Entry"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.delivery.DeliveryAddressActivity_Modify"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.Setting_PasswordModifyActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.WithDraw_PasswordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.Setting_UpdateWithDrawPasswordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.Setting_ForgetWithDrawPasswordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.other.SceneModuleActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.other.SceneModuleDeviceListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.other.SettingActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.modify_info.ModifyInfoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.message.FreeInquiryDetailActivity_FurtherInquiry"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.message.FreeInquiryDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.message.VolunteerMessageActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.other.AboutUsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.message.ProblemListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.other.FamilyPhoneNumberActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.order.PhoneDoctorOrderListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.group.GroupActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.group.GroupMembersActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.contact.WatchContactesActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.contact.AddContactActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.contact.AddContactNumberActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.contact.MessageRecordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.contact.WatchManagerActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.contact.BindingAndUnbundActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.contact.ResumeByAlarmActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.setting.contact.SoundSettingsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+
+        <!-- ************************************************************************** -->
+        <activity
+            android:name="com.soundcloud.android.crop.CropImageActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name="com.zxing.qrcode.BindDeviceActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.index.SpecialCar_Activity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.SelectDestination_Activity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.volunteer.VolunteerStationDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.volunteer.VoluteerOrderDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.missing.NoticeMissingActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.missing.LeavingMsgActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.missing.NoticeMissingDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.missing.PublishNoticeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.missing.SearchPublishDetailActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.missing.SearchPublishRecordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.volunteer.VolunteerMesageActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.index.watch.HealthStepsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidquanjiakan.activity.index.watch.WorkRestEditActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        　
+        <activity
+            android:name="com.androidquanjiakan.activity.index.watch.ClassDisableActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.index.watch.CallsTrafficQueryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.index.watch.DefaultWatcthDeviceListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.index.watch.ChangeAuthorityListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.androidquanjiakan.activity.index.watch.WorkRestPlanActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.androidquanjiakan.activity.setting.contact.bean.WatchInfoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.androidquanjiakan.activity.index.watch_child.elder.CareRemindActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.androidquanjiakan.activity.index.watch_child.elder.EditRemindActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.androidquanjiakan.activity.index.watch_child.elder.OldAddContactActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.androidquanjiakan.activity.index.watch_old.HealthDynamicsActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.androidquanjiakan.activity.index.watch_old.FootPrintRecordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.androidquanjiakan.activity.index.watch_child.elder.ShortcutKeyActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.androidquanjiakan.activity.common.CommonWebEntryActivity_kitkat"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.androidquanjiakan.activity.common.CommonWebEntryActivity_activate"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.androidquanjiakan.activity.index.watch_child.ModifyBindInfoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.androidquanjiakan.activity.index.watch_child.ModifyNameActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!-- ************************************************************************** -->
+
+        <receiver
+            android:name="com.quanjiakanuser.receiver.JReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+
+                <category android:name="com.quanjiakan.main" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required Push SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required Push SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <category android:name="com.quanjiakan.main" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".wxapi.AppRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required Push SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.quanjiakan.main" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PopWinActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.quanjiakan.main" />
+            </intent-filter>
+        </activity>
+        <!-- Required Push SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" />
+        <!-- Required Push SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <!-- IM Required IM SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.im.android.helpers.IMReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.im.android.action.IM_RESPONSE" />
+                <action android:name="cn.jpush.im.android.action.NOTIFICATION_CLICK_PROXY" />
+
+                <category android:name="com.quanjiakan.main" />
+            </intent-filter>
+        </receiver>
+
+        <!-- option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <!--<service-->
+            <!--android:name="cn.jpush.android.service.DaemonService"-->
+            <!--android:enabled="true"-->
+            <!--android:exported="true">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="cn.jpush.android.intent.DaemonService" />-->
+
+                <!--<category android:name="com.quanjiakan.main" />-->
+            <!--</intent-filter>-->
+        <!--</service>-->
+
+        <provider
+            android:name="com.androidquanjiakan.database.TableProvider"
+            android:authorities="com.androidquanjiakan.database.TableProvider"
+            android:readPermission="com.androidquanjiakan.database.TableProvider" />
+
+        <!-- Required. Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <!-- Required. AppKey copied from Portal   30dfaa9a7f05edb021212d4d  test ***  3441cfbff7e24a2da2090605 -->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="57bc71929aa01ebc90f3ff5d" />
+        <!-- </>值来自开发者平台取得的AppKey -->
+
+
+        <!-- baidu map sdk -->
+        <!--<meta-data-->
+        <!--android:name="com.baidu.lbsapi.API_KEY"-->
+        <!--android:value="Kxng4S5W6SgQNjLtDGn39mM3iH56WYgF" />-->
+
+        <!-- gaode map sdk -->
+        <!--<meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="bc885d20bd29688b58242c1bcd9b0e4a" />-->
+
+        <service android:name="com.amap.api.location.APSService" />
+        <service
+            android:name="com.androidquanjiakan.base.PushService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.androidquanjiakan.service.DevicesService"
+            android:enabled="true"
+            android:exported="false"
+            />
+        <service
+            android:name="com.androidquanjiakan.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.androidquanjiakan.service.RemoteService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote2">
+            <intent-filter>
+                <action android:name="com.androidquanjiakan.service.RemoteService" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58e8953ca40fa359a1000bcb"></meta-data>
+        <!--  58e4833c310c935bd40010ac
+        -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng"></meta-data>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="0dp"
+    android:orientation="vertical"
+    >
+    <!--
+    <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:orientation">vertical</item>
+    -->
+
+    <TextView
+        android:id="@+id/jmui_send_time_txt"
+        style="@style/jmui_chat_text_date_style_play"
+        android:visibility="gone"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <cn.jmessage.android.uikit.chatting.CircleImageView
+            android:id="@+id/jmui_avatar_iv"
+            style="@style/jmui_chat_item_receiver_avatar_style"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/jmui_display_level"
+            android:layout_width="@dimen/height_40"
+            android:layout_height="@dimen/size_16"
+            android:gravity="right"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/size_7"
+            android:background="@drawable/one_level"
+            />
+
+        <TextView
+            android:id="@+id/jmui_display_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/jmui_display_level"
+            android:text="游客"
+            android:textSize="@dimen/font_16"
+            android:textColor="#C7A949"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            />
+
+        <!--
+        <item name="android:maxWidth">225dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textColor">@color/jmui_chat_text_color</item>
+        -->
+        <TextView
+            android:id="@+id/jmui_msg_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="245dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_alignTop="@+id/jmui_display_name_tv"
+            android:paddingTop="@dimen/size_0"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_toRightOf="@id/jmui_display_name_tv"
+            android:paddingRight="10dp"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/color_title_green"
+            android:text="222222222222222222222222222222222222222222222222222222222222222"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

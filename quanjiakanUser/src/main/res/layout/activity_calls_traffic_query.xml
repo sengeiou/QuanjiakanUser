@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_title"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#00000000"
+            android:layout_marginTop="10dp">
+        </ListView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/nonedata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/message_pic_no"
+
+            />
+        <TextView
+            android:id="@+id/nonedatahint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无查询记录"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/nonedata"
+            android:textSize="@dimen/font_14"
+            android:textColor="@color/font_color_999999"
+            />
+        </RelativeLayout>
+
+
+
+
+    </FrameLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/tv_querycalls"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:text="查询话费"
+            android:textSize="20dp"
+            android:textColor="@color/font_color_333333"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+        <View
+            android:id="@+id/tv_aboutus_div1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/font_color_EEEEEE"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_10"
+            />
+
+
+
+        <TextView
+            android:id="@+id/tv_querytraffic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:text="查询流量"
+            android:textSize="20dp"
+            android:textColor="@color/font_color_333333"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

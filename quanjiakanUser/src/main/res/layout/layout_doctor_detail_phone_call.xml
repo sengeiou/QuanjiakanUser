@@ -1,0 +1,67 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    >
+    <include 
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title"
+        />
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_title"
+        android:layout_above="@+id/tv_book"
+        >
+    	<LinearLayout
+    	    android:id="@+id/layout_container"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="vertical"
+    	    android:background="@color/main_bg_color"
+    	    >
+			<ImageView
+				android:id="@+id/header"
+				android:layout_width="@dimen/height_100"
+				android:layout_height="@dimen/height_100"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="@dimen/size_50"
+				android:src="@drawable/doctor_phone_call_header"
+				/>
+
+
+			<ImageView
+				android:id="@+id/call"
+				android:layout_width="@dimen/height_210"
+				android:layout_height="@dimen/height_210"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="@dimen/size_20"
+				android:src="@drawable/doctor_phone_call_phone"
+				/>
+
+		</LinearLayout>
+	</ScrollView>
+
+	<TextView 
+	    android:id="@+id/tv_book"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+	    android:text="拨号"
+		android:textColor="@color/color_title_green"
+		android:textSize="@dimen/font_18"
+	    android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="@dimen/margin_20"
+		android:layout_marginTop="@dimen/margin_15"
+		android:paddingLeft="@dimen/margin_50"
+		android:paddingRight="@dimen/margin_50"
+		android:paddingTop="@dimen/margin_10"
+		android:paddingBottom="@dimen/margin_10"
+	    android:background="@drawable/selecter_hollow_green_transport"
+	    />
+	
+</RelativeLayout>	

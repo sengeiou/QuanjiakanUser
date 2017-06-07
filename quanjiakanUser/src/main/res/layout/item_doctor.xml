@@ -1,0 +1,115 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <ImageView 
+        android:id="@+id/image"
+        android:layout_width="@dimen/height_70"
+        android:layout_height="@dimen/height_70"
+        android:src="@drawable/ic_doctor"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/hei222" 
+        android:textSize="@dimen/font_15"
+        android:layout_toRightOf="@+id/image"
+        android:text="张杰"
+        android:layout_marginLeft="@dimen/size_8"
+        android:layout_marginTop="@dimen/margin_10"
+        />
+
+    <TextView
+        android:id="@+id/tv_hospital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/hei"
+        android:textSize="@dimen/font_15"
+        android:text="广州中山医院"
+        android:layout_toRightOf="@+id/tv_name"
+        android:layout_alignTop="@+id/tv_name"
+        android:layout_marginRight="@dimen/size_8"
+        android:layout_marginLeft="@dimen/size_8"
+        />
+
+    <!--android:layout_below="@+id/tv_clinic_title"-->
+
+    <TextView
+        android:id="@+id/tv_clinic_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_hospital"
+        android:layout_toRightOf="@+id/tv_name"
+        android:layout_alignLeft="@+id/tv_name"
+        android:text="小儿科"
+        android:layout_marginRight="@dimen/size_8"
+        android:layout_marginTop="@dimen/size_5"
+        android:textSize="@dimen/font_14"
+        android:paddingLeft="@dimen/size_6"
+        android:paddingRight="@dimen/size_6"
+        android:paddingTop="@dimen/size_2"
+        android:paddingBottom="@dimen/size_2"
+        android:textColor="@color/white"
+        android:background="@drawable/selecter_rectangle_round_green_339966"
+        />
+
+    <TextView
+        android:id="@+id/tv_rank_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_hospital"
+        android:layout_toRightOf="@+id/tv_clinic_title"
+        android:text="副主任医师"
+        android:layout_marginRight="@dimen/size_8"
+        android:layout_marginTop="@dimen/size_5"
+        android:textSize="@dimen/font_14"
+        android:paddingLeft="@dimen/size_6"
+        android:paddingRight="@dimen/size_6"
+        android:paddingTop="@dimen/size_2"
+        android:paddingBottom="@dimen/size_2"
+        android:textColor="@color/white"
+        android:background="@drawable/selecter_rectangle_round_green_339966"
+        />
+
+    <RatingBar
+        android:id="@+id/rbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_clinic_title"
+        android:layout_alignLeft="@+id/tv_clinic_title"
+        android:layout_marginTop="@dimen/margin_5"
+        android:numStars="5"
+        android:rating="5"
+        style="@style/roomRatingBar"
+        />
+
+<!--    <TextView
+        android:id="@+id/tv_good_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/qianhei"
+        android:textSize="14sp"
+        android:text="呼吸道感染，皮肤病，心脏病"
+        android:layout_below="@+id/rbar"
+        android:layout_alignLeft="@+id/rbar"
+        android:layout_marginTop="@dimen/size_8"
+        android:layout_marginBottom="@dimen/margin_5"
+        android:layout_marginRight="@dimen/size_8"
+        />-->
+
+    <View
+        android:layout_below="@+id/rbar"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:background="@color/colorAlphaBlack_11"
+        />
+    
+</RelativeLayout>

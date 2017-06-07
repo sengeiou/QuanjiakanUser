@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:background="@color/transparent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_show_gift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/rl_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/gift_bg">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_send_gift_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/touxiang" />
+
+            <TextView
+                android:id="@+id/tv_send_gift_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/iv_send_gift_icon"
+                android:text="----"
+                android:textColor="#FFFFFF"
+                />
+
+
+
+            <TextView
+                android:id="@+id/tv_send_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tv_send_gift_name"
+                android:text="送出礼物"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:id="@+id/iv_gift"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_send_one"
+                 />
+
+
+        </RelativeLayout>
+        <com.quanjiakanuser.widget.MagicTextView
+            android:id="@+id/giftNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/rl_gift"
+            android:includeFontPadding="false"
+            android:text="x1"
+            android:textColor="#FFF1AD4F"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:strokeColor="@android:color/white"
+            app:strokeJoinStyle="miter"
+            app:strokeWidth="2" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

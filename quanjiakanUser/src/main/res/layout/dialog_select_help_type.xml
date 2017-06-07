@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="bottom"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_address"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="求助对象"
+            android:textColor="@color/crop__button_text"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_weight="0.9"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1"
+            android:background="@color/main_bg_color"
+            />
+
+        <TextView
+            android:id="@+id/tv_oldpeople"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="老人"
+            android:gravity="center"
+            android:textColor="@color/selector_urgency"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1"
+            android:background="@color/main_bg_color"
+            />
+
+        <TextView
+            android:id="@+id/tv_children"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="儿童"
+            android:gravity="center"
+            android:textColor="@color/selector_urgency"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1"
+            android:background="@color/main_bg_color"
+            />
+
+        <TextView
+            android:id="@+id/tv_young_people"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="少年"
+            android:gravity="center"
+            android:textColor="@color/selector_urgency"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1"
+            android:background="@color/main_bg_color"
+            />
+
+        <TextView
+            android:id="@+id/tv_disabled_people"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="残障人士"
+            android:gravity="center"
+            android:textColor="@color/selector_urgency"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1"
+            android:background="@color/main_bg_color"
+            />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:textColor="@color/red_e"
+            android:text="@string/cancel"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

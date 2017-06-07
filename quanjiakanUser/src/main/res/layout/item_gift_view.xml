@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/llt_gift"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_lian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/item_image"
+                android:visibility="invisible"
+                android:src="@drawable/lian_icon"
+                />
+
+            <ImageView
+                android:layout_below="@+id/iv_lian"
+                android:id="@+id/item_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/car_icon" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="汽车"
+            android:textSize="10sp"
+            android:textColor="#ffffff"
+            />
+        <TextView
+            android:id="@+id/item_edou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10E豆"
+            android:textSize="8sp"
+            android:textColor="#FFF5ECEC"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

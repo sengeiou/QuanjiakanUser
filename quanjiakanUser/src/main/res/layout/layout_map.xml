@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent" >
+
+    <TextView 
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/size_16"
+        android:paddingBottom="@dimen/size_16"
+        android:textColor="@color/white"
+        android:background="@color/red"
+        android:text="您的家人在这个跌倒，请您快速处理"
+        android:gravity="center_horizontal"
+        />
+    
+	<com.amap.api.maps2d.MapView 
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/map"
+	    android:layout_below="@+id/tv"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" />
+	
+	<TextView 
+	    android:id="@+id/tv_call"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="呼叫120"
+	    android:textColor="@color/white"
+	    android:background="@color/maincolor"
+	    android:paddingTop="@dimen/size_8"
+	    android:paddingBottom="@dimen/size_8"
+	    android:paddingLeft="@dimen/size_24"
+	    android:paddingRight="@dimen/size_24"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginBottom="@dimen/size_4"
+	    android:layout_centerHorizontal="true"
+	    android:textSize="@dimen/font_16"
+	    android:textStyle="bold"
+	    />
+	
+</RelativeLayout>

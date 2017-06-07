@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:id="@+id/title_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_30"
+        android:orientation="horizontal"
+        android:background="@color/main_bg_color"
+        >
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Title"
+            android:textSize="@dimen/font_16"
+            android:textColor="@color/colorPureBlack"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_10"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1"
+            android:background="@color/colorAlphaBlack_22"
+            />
+    </LinearLayout>
+    <View
+        android:layout_below="@+id/title_line"
+        android:layout_width="@dimen/size_5"
+        android:layout_height="@dimen/size_18"
+        android:layout_marginTop="@dimen/size_15"
+        android:background="@color/color_title_green" />
+
+    <TextView
+        android:id="@+id/last_msg"
+        android:layout_below="@+id/title_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_18"
+        android:layout_marginRight="@dimen/margin_100"
+        android:layout_marginTop="@dimen/size_18"
+        android:singleLine="true"
+        android:text="Message  "
+        android:textColor="@color/color_conversation_list_msg"
+        android:textSize="@dimen/font_14" />
+
+    <TextView
+        android:id="@+id/last_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/last_msg"
+        android:layout_marginLeft="@dimen/size_18"
+        android:layout_marginTop="@dimen/size_12"
+        android:singleLine="true"
+        android:text="Message  "
+        android:textColor="@color/color_conversation_list_info"
+        android:textSize="@dimen/font_12" />
+
+    <TextView
+        android:id="@+id/conversation_time"
+        android:layout_below="@+id/title_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/size_20"
+        android:layout_marginRight="@dimen/margin_10"
+        android:gravity="center_vertical|right"
+        android:text="刚刚"
+        android:textSize="@dimen/font_12"
+        android:textColor="@color/color_conversation_list_status_unread"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conversation_time"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/size_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/conversation_status_flag"
+            android:layout_width="@dimen/size_8"
+            android:layout_height="@dimen/size_8"
+            android:visibility="visible"
+            android:background="@drawable/selecter_conversation_cycle_red" />
+        <TextView
+            android:id="@+id/conversation_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_5"
+            android:text="未回复"
+            android:textSize="@dimen/font_12"
+            android:textColor="@color/color_conversation_list_status_unread"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:background="@color/colorAlphaBlack_22"
+        android:layout_below="@+id/last_info"
+        android:layout_marginTop="@dimen/margin_18"
+        />
+</RelativeLayout>

@@ -1,0 +1,325 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPureWhite">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_bar_height"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/nickname_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手表使用者昵称:"
+                    android:textColor="@color/font_color_666666"
+                    android:textSize="@dimen/font_14" />
+
+                <EditText
+                    android:id="@+id/nickname"
+                    android:layout_width="@dimen/height_160"
+                    android:layout_height="@dimen/size_30"
+                    android:layout_marginLeft="@dimen/size_8"
+                    android:background="@drawable/selecter_device_bind_nickname"
+                    android:paddingLeft="@dimen/size_10"
+                    android:paddingRight="@dimen/size_5"
+                    android:textSize="@dimen/font_14" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/imageblock"
+                android:layout_width="@dimen/height_260"
+                android:layout_height="@dimen/height_150"
+                android:layout_below="@id/nickname_line"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginRight="@dimen/margin_20"
+                android:layout_marginTop="@dimen/size_16"
+                android:background="@drawable/binding_id_pic">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="@dimen/size_70"
+                    android:layout_height="@dimen/size_70"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/size_30"
+                    android:src="@drawable/binding_portrait_ico" />
+
+                <TextView
+                    android:id="@+id/image_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/size_5"
+                    android:text="上传头像"
+                    android:textColor="@color/font_color_666666"
+                    android:textSize="@dimen/font_14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/inputline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageblock">
+
+                <TextView
+                    android:id="@+id/bind_device_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_30"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="@string/bind_device_input_id"
+                    android:textColor="@color/font_color_15A9A9"
+                    android:textSize="@dimen/font_18"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bind_device_scan_2dcode"
+                    android:layout_width="@dimen/height_110"
+                    android:layout_height="@dimen/height_45"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/bind_device_id"
+                    android:layout_marginRight="@dimen/margin_30"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@drawable/selecter_solid_bg_green"
+                    android:drawableLeft="@drawable/scan_2dcode_white"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:text="@string/bind_device_input_scan_2dcode"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_10" />
+
+                <EditText
+                    android:id="@+id/bind_device_2dcode_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_45"
+                    android:layout_below="@+id/bind_device_id"
+                    android:layout_marginLeft="@dimen/margin_30"
+                    android:layout_marginRight="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_toLeftOf="@+id/bind_device_scan_2dcode"
+                    android:background="@drawable/selecter_rectangle_hollow"
+                    android:hint="@string/bind_device_input_id_hint"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/size_10"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_medium" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/relation_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inputline"
+                android:layout_marginLeft="@dimen/size_35"
+                android:layout_marginTop="@dimen/margin_15"
+                android:text="您与手表使用者关系:"
+                android:textColor="@color/font_color_999999"
+                android:textSize="@dimen/font_14" />
+
+            <LinearLayout
+                android:id="@+id/relation_line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relation_hint"
+                android:layout_marginLeft="@dimen/size_30"
+                android:layout_marginRight="@dimen/size_30"
+                android:layout_marginTop="@dimen/margin_10"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/relation_daddy"
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_5"
+                    android:layout_marginRight="@dimen/size_5"
+                    android:background="@drawable/selecter_device_bind_unselected"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/size_5"
+                    android:paddingTop="@dimen/size_5"
+                    android:text="爸爸"
+                    android:textColor="@color/font_color_999999"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:id="@+id/relation_mammy"
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_5"
+                    android:layout_marginRight="@dimen/size_5"
+                    android:background="@drawable/selecter_device_bind_unselected"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/size_5"
+                    android:paddingTop="@dimen/size_5"
+                    android:text="妈妈"
+                    android:textColor="@color/font_color_999999"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:id="@+id/relation_grandpa"
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_5"
+                    android:layout_marginRight="@dimen/size_5"
+                    android:background="@drawable/selecter_device_bind_unselected"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/size_5"
+                    android:paddingTop="@dimen/size_5"
+                    android:text="爷爷"
+                    android:textColor="@color/font_color_999999"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:id="@+id/relation_grandma"
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_5"
+                    android:layout_marginRight="@dimen/size_5"
+                    android:background="@drawable/selecter_device_bind_unselected"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/size_5"
+                    android:paddingTop="@dimen/size_5"
+                    android:text="奶奶"
+                    android:textColor="@color/font_color_999999"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:id="@+id/relation_grandfa"
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_5"
+                    android:layout_marginRight="@dimen/size_5"
+                    android:background="@drawable/selecter_device_bind_unselected"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/size_5"
+                    android:paddingTop="@dimen/size_5"
+                    android:text="外公"
+                    android:textColor="@color/font_color_999999"
+                    android:textSize="@dimen/font_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/relation_line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relation_line1"
+                android:layout_marginLeft="@dimen/size_30"
+                android:layout_marginRight="@dimen/size_30"
+                android:layout_marginTop="@dimen/margin_10"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/relation_grandmama"
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_5"
+                    android:layout_marginRight="@dimen/size_5"
+                    android:background="@drawable/selecter_device_bind_unselected"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/size_5"
+                    android:paddingTop="@dimen/size_5"
+                    android:text="外婆"
+                    android:textColor="@color/font_color_999999"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:id="@+id/relation_sister"
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_5"
+                    android:layout_marginRight="@dimen/size_5"
+                    android:background="@drawable/selecter_device_bind_unselected"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/size_5"
+                    android:paddingTop="@dimen/size_5"
+                    android:text="姐姐"
+                    android:textColor="@color/font_color_999999"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:id="@+id/relation_brother"
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_5"
+                    android:layout_marginRight="@dimen/size_5"
+                    android:background="@drawable/selecter_device_bind_unselected"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/size_5"
+                    android:paddingTop="@dimen/size_5"
+                    android:text="哥哥"
+                    android:textColor="@color/font_color_999999"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:id="@+id/relation_design"
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_5"
+                    android:layout_marginRight="@dimen/size_5"
+                    android:background="@drawable/selecter_device_bind_unselected"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/size_5"
+                    android:paddingTop="@dimen/size_5"
+                    android:text="自定义"
+                    android:textColor="@color/font_color_999999"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_5"
+                    android:layout_marginRight="@dimen/size_5"
+                    android:background="@drawable/selecter_device_bind_unselected"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/size_5"
+                    android:paddingLeft="@dimen/size_10"
+                    android:paddingRight="@dimen/size_10"
+                    android:paddingTop="@dimen/size_5"
+                    android:text="爸爸"
+                    android:textColor="@color/font_color_999999"
+                    android:textSize="@dimen/font_14"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="@dimen/height_150"
+                android:layout_height="@dimen/height_40"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/relation_line2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/margin_30"
+                android:layout_marginLeft="@dimen/size_15"
+                android:layout_marginRight="@dimen/size_15"
+                android:layout_marginTop="@dimen/height_45"
+                android:background="@drawable/selecter_bind_device_hollow_green"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textColor="@color/color_title_green" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

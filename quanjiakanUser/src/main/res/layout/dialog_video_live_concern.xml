@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/message_choose_nav"
+    >
+	<RelativeLayout
+		android:id="@+id/info_line"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/selecter_rectangle_round_white_round10"
+		android:paddingTop="@dimen/size_50"
+		android:paddingBottom="@dimen/size_20"
+		android:paddingLeft="@dimen/size_50"
+		android:paddingRight="@dimen/size_50"
+		android:layout_marginTop="@dimen/size_30"
+		>
+		<LinearLayout
+			android:id="@+id/name_line"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_centerHorizontal="true"
+			android:gravity="center_vertical"
+			>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="名字"
+				android:textColor="@color/font_color_333333"
+				android:textSize="@dimen/font_18"
+				/>
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/margin_10"
+				android:text="医生职称"
+				android:textColor="@color/font_color_FFFFFF"
+				android:textSize="@dimen/font_12"
+				android:background="@drawable/selecter_rectangle_round_blue_round2"
+				android:padding="@dimen/size_5"
+				/>
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/hospital"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/name_line"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="@dimen/margin_10"
+			android:text="所属医院: 广州市第一人民医院"
+			android:textColor="@color/font_color_999999"
+			android:textSize="@dimen/font_12"
+			/>
+
+		<TextView
+			android:id="@+id/clinic"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/hospital"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="@dimen/margin_10"
+			android:text="所属科室: 肿瘤及预防科"
+			android:textColor="@color/font_color_999999"
+			android:textSize="@dimen/font_12"
+			/>
+
+	</RelativeLayout>
+	<ImageView
+		android:id="@+id/head_image"
+		android:layout_width="@dimen/size_60"
+		android:layout_height="@dimen/size_60"
+		android:layout_centerHorizontal="true"
+		android:src="@drawable/ic_launcher"
+		/>
+</RelativeLayout>
+    

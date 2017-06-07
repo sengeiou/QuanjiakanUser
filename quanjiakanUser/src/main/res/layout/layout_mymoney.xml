@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color">
+
+    <!--<RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/color_title_green">
+
+        <ImageButton
+            android:id="@+id/ibtn_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_action_back"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我的钱包"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_big" />
+
+        <TextView
+            android:id="@+id/tv_bankcard"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:text="银行卡"
+            android:textSize="@dimen/font_big"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>-->
+    <include
+        layout="@layout/layout_title"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/iv_wallet_icon"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的零钱(元)"
+        android:textSize="22sp"
+        android:layout_gravity="center"
+        android:textColor="@color/font_color_333333"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/font_color_333333"
+        android:layout_marginTop="20dp"
+        android:textSize="28sp"
+        android:text="¥ 0"/>
+
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/selecter_hollow_green"
+        android:textSize="20sp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:text="提现"
+        android:textColor="@color/color_title_green"
+        />
+
+
+</LinearLayout>

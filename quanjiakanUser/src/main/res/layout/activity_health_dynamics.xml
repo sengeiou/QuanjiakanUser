@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_title"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_rb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:gravity="center"
+        android:layout_marginTop="12dp">
+        
+        <RadioGroup
+            android:id="@+id/rg_health"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            
+            <RadioButton
+                android:id="@+id/rbt_step"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:button="@null"
+                android:text="计步"
+                android:textSize="18sp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/health_radio_color"
+                android:background="@drawable/selector_rb_health_steps"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/rbt_heartrate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:button="@null"
+                android:text="心率"
+                android:textSize="18sp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/health_radio_color"
+                android:background="@drawable/selector_rb_health_heartrate"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/rbt_sleep"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:button="@null"
+                android:text="睡眠"
+                android:textSize="18sp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/health_radio_color"
+                android:background="@drawable/selector_rb_health_sleep"
+                android:layout_weight="1"/>
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ll_rb">
+
+    </FrameLayout>
+
+
+
+
+</RelativeLayout>

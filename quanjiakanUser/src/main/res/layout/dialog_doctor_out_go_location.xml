@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/location_bg"
+    >
+    <TextView
+        android:id="@+id/loc_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="您当前位置:"
+        android:textSize="@dimen/font_18"
+        android:textColor="@color/font_color_333333"
+        android:layout_marginTop="@dimen/margin_20"
+        />
+
+    <TextView
+        android:id="@+id/loc_addr"
+        android:layout_below="@+id/loc_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="广州天河广州天河广州天河广州天河广州天河广州天河广州天河广州天河广州天河"
+        android:ems="15"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_14"
+        android:paddingLeft="@dimen/size_15"
+        android:paddingRight="@dimen/size_15"
+        android:paddingTop="@dimen/size_5"
+        android:paddingBottom="@dimen/size_5"
+        android:layout_marginTop="@dimen/size_11"
+        android:layout_marginLeft="@dimen/size_30"
+        android:layout_marginRight="@dimen/size_30"
+        android:background="@drawable/selecter_solid_14a9a8_round20"
+        />
+
+    <TextView
+        android:id="@+id/loc_confirm"
+        android:layout_below="@+id/loc_addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_14"
+        android:paddingLeft="@dimen/size_15"
+        android:paddingRight="@dimen/size_15"
+        android:paddingTop="@dimen/size_5"
+        android:paddingBottom="@dimen/size_5"
+        android:layout_marginTop="@dimen/size_25"
+        android:layout_marginBottom="@dimen/margin_30"
+        android:background="@drawable/selecter_solid_14a9a8"
+        />
+
+</RelativeLayout>
+    

@@ -1,0 +1,116 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    >
+    
+    <ImageView 
+        android:id="@+id/image"
+        android:layout_width="@dimen/height_80"
+        android:layout_height="@dimen/height_80"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_gray"
+        android:layout_marginTop="@dimen/height_50"
+        />
+    
+    <EditText 
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45"
+        android:background="@drawable/inputbox_1"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="@dimen/height_30"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginRight="@dimen/size_15"
+        android:textSize="@dimen/font_medium"
+        android:hint="请输入手机号"
+        android:paddingLeft="@dimen/size_6"
+        android:drawableLeft="@drawable/login_phone"
+        android:drawablePadding="@dimen/size_6"
+        />
+    
+    <EditText 
+        android:id="@+id/et_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45"
+        android:background="@drawable/inputbox_1"
+        android:layout_below="@+id/et_username"
+        android:layout_marginTop="@dimen/height_10"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginRight="@dimen/size_15"
+        android:hint="请输入短信验证码"
+        android:paddingLeft="@dimen/size_6"
+        android:textSize="@dimen/font_medium"
+        android:drawableLeft="@drawable/login_phone"
+        android:drawablePadding="@dimen/size_6"
+        />
+    
+    <TextView 
+        android:id="@+id/btn_yanzhengma"
+        android:layout_width="@dimen/height_90"
+        android:layout_height="@dimen/height_30"
+        android:background="@color/maincolor"
+        android:layout_alignRight="@+id/et_code"
+        android:layout_alignTop="@+id/et_code"
+        android:paddingLeft="@dimen/size_15"
+        android:paddingRight="@dimen/size_15"
+        android:text="获取验证码"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/font_small"
+        android:layout_marginTop="@dimen/size_8"
+        android:layout_marginRight="@dimen/size_8"
+        />
+    
+    <EditText 
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45"
+        android:background="@drawable/inputbox_1"
+        android:layout_below="@+id/et_code"
+        android:layout_marginTop="@dimen/size_10"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginRight="@dimen/size_15"
+        android:hint="请输入密码"
+        android:paddingLeft="@dimen/size_6"
+        android:textSize="@dimen/font_medium"
+        android:drawableLeft="@drawable/login_code"
+        android:drawablePadding="@dimen/size_6"
+        android:inputType="textPassword"
+        />
+    
+    <EditText 
+        android:id="@+id/et_confirmpassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45"
+        android:background="@drawable/inputbox_1"
+        android:layout_below="@+id/et_password"
+        android:layout_marginTop="@dimen/size_10"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginRight="@dimen/size_15"
+        android:hint="重新输入密码"
+        android:paddingLeft="@dimen/size_6"
+        android:textSize="@dimen/font_medium"
+        android:drawableLeft="@drawable/login_code"
+        android:drawablePadding="@dimen/size_6"
+        android:inputType="textPassword"
+        />    
+    
+    <Button 
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40"
+        android:background="@drawable/bg_button"
+        android:layout_below="@+id/et_confirmpassword"
+        android:layout_marginTop="@dimen/height_30"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="医生注册"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginRight="@dimen/size_15"
+        />
+    
+</RelativeLayout> 

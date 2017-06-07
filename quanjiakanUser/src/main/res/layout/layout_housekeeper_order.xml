@@ -1,0 +1,499 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_paid"
+        android:layout_below="@+id/layout_title">
+
+        <LinearLayout
+            android:id="@+id/layout_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_bg_color"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/size_16"
+                android:paddingLeft="@dimen/size_8"
+                android:paddingRight="@dimen/size_8"
+                android:paddingTop="@dimen/size_16">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="@dimen/height_70"
+                    android:layout_height="@dimen/height_70"
+                    android:src="@drawable/ic_doctor" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_8"
+                    android:layout_toRightOf="@+id/image"
+                    android:text="肾宝片126片"
+                    android:textColor="@color/hei222"
+                    android:textSize="@dimen/font_16" />
+
+                <TextView
+                    android:id="@+id/tv_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_4"
+                    android:layout_toRightOf="@+id/tv_name"
+                    android:background="@drawable/selecter_hollow_transport_169e4f"
+                    android:padding="@dimen/size_2"
+                    android:text="初级保姆"
+                    android:textColor="#169e4f"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:id="@+id/tv_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_name"
+                    android:layout_below="@+id/tv_name"
+                    android:layout_marginTop="@dimen/size_8"
+                    android:text="年龄:"
+                    android:textColor="@color/hei"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_name"
+                    android:layout_marginLeft="@dimen/size_8"
+                    android:layout_marginTop="@dimen/size_8"
+                    android:layout_toRightOf="@+id/tv_age"
+                    android:text="价格:"
+                    android:textColor="@color/hei"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:id="@+id/tv_rate_key"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_name"
+                    android:layout_below="@+id/tv_price"
+                    android:layout_marginTop="@dimen/size_8"
+                    android:text="评分:"
+                    android:textColor="@color/hei" />
+
+                <RatingBar
+                    android:id="@+id/rbar"
+                    style="@style/roomRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_price"
+                    android:layout_marginLeft="@dimen/size_4"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:layout_toRightOf="@+id/tv_rate_key" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_12"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_mark"
+                    android:layout_width="@dimen/size_4"
+                    android:layout_height="@dimen/size_18"
+                    android:layout_marginBottom="@dimen/size_6"
+                    android:layout_marginTop="@dimen/size_6"
+                    android:background="@color/maincolor" />
+
+                <TextView
+                    android:id="@+id/tv_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_45"
+                    android:layout_marginBottom="@dimen/size_6"
+                    android:layout_marginLeft="@dimen/size_12"
+                    android:layout_marginTop="@dimen/size_6"
+                    android:layout_toRightOf="@+id/tv_mark"
+                    android:gravity="center_vertical"
+                    android:text="预约时间"
+                    android:textColor="@color/hei55"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:id="@+id/tv_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_1"
+                    android:layout_below="@+id/tv_info"
+                    android:layout_marginLeft="@dimen/size_12"
+                    android:layout_marginRight="@dimen/size_12"
+                    android:background="@color/fengexian" />
+
+                <TextView
+                    android:id="@+id/tv_begin_date"
+                    style="@style/textview_key"
+                    android:layout_height="@dimen/height_45"
+                    android:layout_below="@+id/tv_line"
+                    android:layout_marginLeft="@dimen/size_8"
+                    android:layout_marginRight="@dimen/size_8"
+                    android:gravity="center_vertical"
+                    android:text="开始日期" />
+
+                <TextView
+                    android:id="@+id/tv_begin_date_value"
+                    style="@style/textview_key"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_45"
+                    android:layout_alignBottom="@+id/tv_begin_date"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_line"
+                    android:layout_marginLeft="@dimen/size_8"
+                    android:layout_marginRight="@dimen/size_8"
+                    android:drawableRight="@drawable/ic_next"
+                    android:gravity="center_vertical"
+                    android:text="选择开始日期" />
+
+                <TextView
+                    android:id="@+id/tv_end_date"
+                    style="@style/textview_key"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_45"
+                    android:layout_below="@+id/tv_begin_date"
+                    android:layout_marginLeft="@dimen/size_8"
+                    android:layout_marginRight="@dimen/size_8"
+                    android:gravity="center_vertical"
+                    android:text="结束日期" />
+
+                <TextView
+                    android:id="@+id/tv_end_date_value"
+                    style="@style/textview_key"
+                    android:layout_width="wrap_content"
+                    android:layout_alignBottom="@+id/tv_end_date"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_begin_date"
+                    android:layout_marginLeft="@dimen/size_8"
+                    android:layout_marginRight="@dimen/size_8"
+                    android:drawableRight="@drawable/ic_next"
+                    android:gravity="center_vertical"
+                    android:text="选择结束日期" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_service_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_12"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_mark_services"
+                    android:layout_width="@dimen/size_4"
+                    android:layout_height="@dimen/size_18"
+                    android:layout_marginBottom="@dimen/size_6"
+                    android:layout_marginTop="@dimen/size_6"
+                    android:background="@color/maincolor" />
+
+                <TextView
+                    android:id="@+id/tv_info_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_6"
+                    android:layout_marginLeft="@dimen/size_12"
+                    android:layout_marginTop="@dimen/size_6"
+                    android:layout_toRightOf="@+id/tv_mark_services"
+                    android:text="预约人信息"
+                    android:textColor="@color/hei55"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:id="@+id/tv_line_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_1"
+                    android:layout_below="@+id/tv_info_service"
+                    android:layout_marginLeft="@dimen/size_12"
+                    android:layout_marginRight="@dimen/size_12"
+                    android:background="@color/fengexian" />
+
+                <EditText
+                    android:id="@+id/et_contact_name"
+                    style="@style/EditText_key"
+                    android:layout_below="@+id/tv_line_service"
+                    android:layout_marginLeft="@dimen/size_8"
+                    android:layout_marginRight="@dimen/size_8"
+                    android:layout_marginTop="@dimen/size_8"
+                    android:background="@color/white"
+                    android:hint="联系人姓名"
+                    android:textColor="@color/hei55" />
+
+                <TextView
+                    android:id="@+id/tv_line_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_1"
+                    android:layout_below="@+id/et_contact_name"
+                    android:layout_marginLeft="@dimen/size_12"
+                    android:layout_marginRight="@dimen/size_12"
+                    android:background="@color/fengexian" />
+
+                <EditText
+                    android:id="@+id/et_mobile"
+                    style="@style/EditText_key"
+                    android:layout_below="@+id/tv_line_name"
+                    android:layout_marginLeft="@dimen/size_8"
+                    android:layout_marginRight="@dimen/size_8"
+                    android:layout_marginTop="@dimen/size_8"
+                    android:background="@color/white"
+                    android:hint="联系人手机号"
+                    android:inputType="number"
+                    android:textColor="@color/hei55" />
+
+                <TextView
+                    android:id="@+id/tv_line_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_1"
+                    android:layout_below="@+id/et_mobile"
+                    android:layout_marginLeft="@dimen/size_12"
+                    android:layout_marginRight="@dimen/size_12"
+                    android:background="@color/fengexian" />
+
+                <EditText
+                    android:id="@+id/et_code"
+                    style="@style/EditText_key"
+                    android:layout_below="@+id/tv_line_mobile"
+                    android:layout_marginLeft="@dimen/size_8"
+                    android:layout_marginRight="@dimen/size_8"
+                    android:layout_marginTop="@dimen/size_8"
+                    android:background="@color/white"
+                    android:hint="手机验证码"
+                    android:inputType="number"
+                    android:textColor="@color/hei55"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/et_code"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/size_8"
+                    android:layout_marginRight="@dimen/size_8"
+                    android:background="@drawable/shape_corner_maincolor"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/size_4"
+                    android:paddingLeft="@dimen/size_12"
+                    android:paddingRight="@dimen/size_12"
+                    android:paddingTop="@dimen/size_4"
+                    android:text="获取验证码"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_14"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_line_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_1"
+                    android:layout_below="@+id/et_code"
+                    android:layout_marginLeft="@dimen/size_12"
+                    android:layout_marginRight="@dimen/size_12"
+                    android:background="@color/fengexian"
+                    android:visibility="gone"
+                    />
+
+                <EditText
+                    android:id="@+id/et_address"
+                    style="@style/EditText_key"
+                    android:layout_below="@+id/tv_line_code"
+                    android:layout_marginLeft="@dimen/size_8"
+                    android:layout_marginRight="@dimen/size_8"
+                    android:layout_marginTop="@dimen/size_8"
+                    android:background="@color/white"
+                    android:gravity="top"
+                    android:hint="现在居住地址"
+                    android:lines="2"
+                    android:textColor="@color/hei55" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_12"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_mark_pay"
+                    android:layout_width="@dimen/size_4"
+                    android:layout_height="@dimen/size_18"
+                    android:layout_marginBottom="@dimen/size_6"
+                    android:layout_marginTop="@dimen/size_6"
+                    android:background="@color/maincolor" />
+
+                <TextView
+                    android:id="@+id/tv_info_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_6"
+                    android:layout_marginLeft="@dimen/size_12"
+                    android:layout_marginTop="@dimen/size_6"
+                    android:layout_toRightOf="@+id/tv_mark_pay"
+                    android:text="选择支付方式"
+                    android:textColor="@color/hei55"
+                    android:textSize="@dimen/font_14" />
+
+                <TextView
+                    android:id="@+id/tv_line_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_1"
+                    android:layout_below="@+id/tv_info_pay"
+                    android:layout_marginLeft="@dimen/size_12"
+                    android:layout_marginRight="@dimen/size_12"
+                    android:background="@color/fengexian" />
+
+                <RadioGroup
+                    android:id="@+id/rgp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_line_pay"
+                    android:layout_marginBottom="@dimen/size_12"
+                    android:layout_marginLeft="@dimen/size_8"
+                    android:layout_marginRight="@dimen/size_8"
+                    android:layout_marginTop="@dimen/size_8"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbtn_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/pay_ali"
+                        android:drawablePadding="@dimen/margin_10"
+                        android:drawableRight="@drawable/selector_gender"
+                        android:paddingBottom="@dimen/size_12"
+                        android:paddingLeft="@dimen/size_8"
+                        android:paddingRight="@dimen/size_8"
+                        android:paddingTop="@dimen/size_12"
+                        android:text="支付宝"
+                        android:textColor="@color/hei55"
+                        android:textSize="@dimen/font_medium" />
+
+                    <TextView
+                        android:id="@+id/tv_line2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_1"
+                        android:layout_marginLeft="@dimen/size_8"
+                        android:layout_marginRight="@dimen/size_8"
+                        android:background="@color/fengexian" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/pay_wechat"
+                        android:drawablePadding="@dimen/margin_10"
+                        android:drawableRight="@drawable/selector_gender"
+                        android:paddingBottom="@dimen/size_12"
+                        android:paddingLeft="@dimen/size_8"
+                        android:paddingRight="@dimen/size_8"
+                        android:paddingTop="@dimen/size_12"
+                        android:text="微信支付"
+                        android:textColor="@color/hei55"
+                        android:textSize="@dimen/font_medium" />
+
+                    <TextView
+                        android:id="@+id/tv_line3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_1"
+                        android:layout_marginLeft="@dimen/size_8"
+                        android:layout_marginRight="@dimen/size_8"
+                        android:background="@color/fengexian" />
+
+                    <RadioButton
+                        android:id="@+id/rbtn_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/iv_wallet_small_icon"
+                        android:drawablePadding="@dimen/margin_10"
+                        android:drawableRight="@drawable/selector_gender"
+                        android:paddingBottom="@dimen/size_12"
+                        android:paddingLeft="@dimen/size_8"
+                        android:paddingRight="@dimen/size_8"
+                        android:paddingTop="@dimen/size_12"
+                        android:text="钱包支付"
+                        android:checked="true"
+                        android:textColor="@color/hei55"
+                        android:textSize="@dimen/font_medium" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title" />
+
+    <RelativeLayout
+        android:id="@+id/layout_paid"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#333333">
+
+        <TextView
+            android:id="@+id/tv_order"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/color_title_green"
+            android:gravity="center"
+            android:paddingLeft="@dimen/size_16"
+            android:paddingRight="@dimen/size_16"
+            android:text="确定"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_10"
+            android:layout_toLeftOf="@+id/tv_order"
+            android:drawableRight="@drawable/housekeeper_detail_arrow"
+            android:text="明细"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_18"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_heji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/size_12"
+            android:text="预付款:200元"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_18" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>	

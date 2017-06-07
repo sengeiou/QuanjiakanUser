@@ -1,0 +1,26 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPureWhite"
+    >
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title"
+        />
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/grid"
+        android:layout_below="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/size_4"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/size_4"
+        android:padding="@dimen/size_4" />
+    
+
+</RelativeLayout>

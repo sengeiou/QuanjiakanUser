@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color">
+    <ImageView
+        android:id="@+id/head_icon"
+        android:layout_width="@dimen/height_60"
+        android:layout_height="@dimen/height_60"
+        android:layout_marginBottom="@dimen/size_12"
+        android:layout_marginLeft="@dimen/size_17"
+        android:layout_marginRight="@dimen/size_5"
+        android:layout_marginTop="@dimen/size_25"
+        android:background="@drawable/record_portrait_icon"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_toRightOf="@+id/head_icon"
+        android:layout_alignTop="@+id/head_icon"
+        android:layout_marginTop="8dp"
+        android:text="来自义工   张大明的消息"
+        android:textSize="@dimen/font_14"
+        android:textColor="@color/font_color_BBBBBB"
+        />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/head_icon"
+        android:paddingLeft="@dimen/size_5"
+        android:text="2016-08-21  08:00"
+        android:textColor="@color/font_color_BBBBBB"
+        android:textSize="@dimen/font_14"
+        android:layout_marginTop="@dimen/margin_5"
+        />
+
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_below="@+id/time"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/size_5"
+        android:layout_marginRight="@dimen/size_17"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="未阅读"
+        android:textSize="@dimen/font_14"
+        android:textColor="@color/maincolor"
+        android:gravity="center"
+        />
+
+
+</RelativeLayout>

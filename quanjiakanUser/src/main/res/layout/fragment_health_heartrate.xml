@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_heartrate"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/health_ring_background"/>
+
+        <ImageView
+            android:id="@+id/iv_background"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:src="@drawable/health_ring_nor"
+            android:layout_gravity="center"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本次心率值"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                android:textSize="16sp"
+                android:textColor="@color/color_countTextColor"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_heartrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp">
+
+                <TextView
+                    android:id="@+id/tv_heartrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="68"
+                    android:textColor="@color/step_current"
+                    android:textSize="34sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_heartrate"
+                    android:layout_alignBottom="@+id/tv_heartrate"
+                    android:textSize="17sp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/step_current"
+                    android:text="次/分"/>
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_heart_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/step_current"
+                android:text="心率正常"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_begincheck"
+        android:layout_below="@+id/fl_heartrate"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_heartrate_check_button"
+        android:text="开始检测"
+        android:textColor="@color/heart_check_color"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/btn_begincheck"
+        android:layout_alignRight="@+id/line_chart"
+        android:layout_alignEnd="@+id/line_chart">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当天心率检测"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="22sp"
+            android:textColor="@color/color_countTextColor"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_color_999999"
+                android:text="温馨提示:"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_color_999999"
+                android:text="80-100 次/分 偏高"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_color_999999"
+                android:text="50-  80 次/分 正常"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_color_999999"
+                android:text="  0 - 50 次/分 偏低"/>
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/line_chart"
+        android:layout_below="@+id/rl_notice"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

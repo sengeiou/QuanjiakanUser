@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.jmessage.android.uikit.multiselectphotos.AlbumListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/album_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_bar_height"
+        android:fitsSystemWindows="true"
+        android:background="@color/color_title_green">
+        <ImageButton
+            android:id="@+id/return_btn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/back"
+            android:background="@drawable/jmui_back_btn_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:text="@string/album"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_bg_color"
+        >
+
+        <ListView
+            android:id="@+id/pick_picture_total_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"/>
+
+    </RelativeLayout>
+
+</cn.jmessage.android.uikit.multiselectphotos.AlbumListView>

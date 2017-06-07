@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_home_page_search_position"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:layout_marginLeft="18dp"
+                android:text="广州白云国际广场"
+                android:textColor="@color/font_color_333333"
+                />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="6dp"
+                android:textColor="@color/colortext"
+                android:text="花都区机场大道"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        style="@style/textview_line" />
+
+
+
+
+</LinearLayout>

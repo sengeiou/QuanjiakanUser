@@ -1,0 +1,23 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e5f6ed"
+    >
+    
+    <TextView 
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="快速咨询"
+        android:textColor="@color/maincolor"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/size_12"
+        android:paddingTop="@dimen/size_12"
+        android:paddingBottom="@dimen/size_12"
+        android:drawableRight="@drawable/ic_next"
+        />
+    
+</RelativeLayout>

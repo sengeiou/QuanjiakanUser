@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/fengexian"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title" />
+
+    <RelativeLayout
+        android:id="@+id/rlt_modify_icon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_80"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="绑定头像"
+            android:textColor="@color/font_color_333333"
+            android:textSize="@dimen/font_16"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_centerVertical="true"
+            />
+        
+
+        
+        <ImageView
+            android:id="@+id/iv_modify_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/edit_ico_more"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size_20"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/size_42"
+            android:layout_height="@dimen/size_42"
+            android:src="@drawable/baby_portrait"
+            android:layout_toLeftOf="@id/iv_modify_icon"
+            android:layout_marginRight="@dimen/size_11"
+            android:layout_centerVertical="true"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_dcdcdc"
+            />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlt_modify_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="绑定昵称"
+            android:textColor="@color/font_color_333333"
+            android:textSize="@dimen/font_16"
+            android:layout_marginLeft="@dimen/size_20"
+            android:layout_centerVertical="true"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/iv_modify_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/edit_ico_more"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size_20"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="宝贝"
+            android:textColor="@color/font_color_666666"
+            android:textSize="@dimen/font_16"
+            android:layout_marginRight="@dimen/size_11"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_modify_name"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

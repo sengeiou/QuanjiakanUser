@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/size_48"
+        android:layout_height="@dimen/size_48"
+        android:src="@drawable/message_pic_portrait"
+        android:layout_marginTop="@dimen/size_18"
+        android:layout_marginLeft="@dimen/size_20"
+        />
+
+    <TextView
+        android:id="@+id/tv_describe"
+        android:layout_marginTop="@dimen/size_24"
+        android:layout_marginLeft="@dimen/size_6"
+        android:layout_toRightOf="@id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="宝贝手表设置变更"
+        android:textSize="@dimen/font_16"
+        android:textColor="@color/font_color_333333"
+        />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_marginLeft="@dimen/size_6"
+        android:layout_below="@id/tv_describe"
+        android:layout_toRightOf="@id/iv_icon"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="宝贝姐姐关闭了手表上课期间可拨打管理员的权限."
+        android:textSize="@dimen/size_11"
+        android:textColor="@color/font_color_999999"
+        android:layout_marginTop="@dimen/size_5"
+        />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="昨天16:00"
+        android:textSize="@dimen/size_10"
+        android:textColor="@color/font_color_999999"
+        android:layout_marginRight="@dimen/size_20"
+        android:layout_marginTop="@dimen/size_24"
+        />
+
+    <View
+        android:layout_below="@id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/font_color_EEEEEE"
+        android:layout_marginTop="@dimen/size_11"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_20"
+        />
+
+</RelativeLayout>

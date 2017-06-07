@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_myinfo_changebirth"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ly_myinfo_changebirth_child"
+        android:layout_width="@dimen/height_300"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_selector"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_18"
+            android:text="选择情景模式"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_18" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_20"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rlt_mode1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/tv_mode1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/selector_patient_case_male"
+                    android:drawablePadding="@dimen/size_10"
+                    android:text="实时模式"
+                    android:textColor="@color/font_color_666666"
+                    android:textSize="@dimen/font_14"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlt_mode2"
+                android:layout_marginTop="@dimen/size_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/tv_mode2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:drawableLeft="@drawable/selector_patient_case_male"
+                    android:drawablePadding="@dimen/size_10"
+                    android:text="省电模式"
+                    android:textColor="@color/font_color_666666"
+                    android:textSize="@dimen/font_14"
+                    android:layout_alignParentTop="true"
+
+                    android:layout_marginStart="24dp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlt_mode4"
+                android:layout_marginTop="@dimen/size_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/tv_mode4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_24"
+                    android:drawableLeft="@drawable/selector_patient_case_male"
+                    android:drawablePadding="@dimen/size_10"
+                    android:text="智能模式"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/font_color_666666"
+                    android:textSize="@dimen/font_14" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/size_20"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_40"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/size_28"
+            >
+
+            <TextView
+                android:id="@+id/btn_sure"
+                android:layout_width="@dimen/height_120"
+                android:layout_height="match_parent"
+                android:text="确定"
+                android:gravity="center"
+                android:textSize="@dimen/font_18"
+                android:textColor="@color/font_color_0e7b7b"
+                android:background="@drawable/selecter_hollow_gray"
+                />
+
+            <TextView
+                android:id="@+id/btn_cancel"
+                android:layout_toRightOf="@id/btn_sure"
+                android:layout_marginLeft="@dimen/size_35"
+                android:layout_width="@dimen/height_120"
+                android:layout_height="match_parent"
+                android:text="@string/cancel"
+                android:gravity="center"
+                android:textSize="@dimen/font_18"
+                android:textColor="@color/font_color_666666"
+                android:background="@drawable/selecter_hollow_gray"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPureWhite">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_bar_height"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_title">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/bind_device_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_30"
+                android:layout_marginTop="@dimen/margin_15"
+                android:text="@string/bind_device_input_name"
+                android:textColor="@color/colorAlphaBlack_AA"
+                android:textSize="@dimen/font_18" />
+
+            <EditText
+                android:id="@+id/bind_device_name_value"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:layout_below="@+id/bind_device_name"
+                android:layout_marginLeft="@dimen/margin_30"
+                android:layout_marginRight="@dimen/margin_30"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/selecter_rectangle_hollow"
+                android:hint="@string/bind_device_input_name_hint"
+                android:paddingLeft="@dimen/size_10"
+                android:singleLine="true"
+                android:textSize="@dimen/font_medium" />
+
+            <EditText
+                android:id="@+id/bind_device_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_45"
+                android:layout_below="@+id/bind_device_name_value"
+                android:layout_marginLeft="@dimen/margin_30"
+                android:layout_marginRight="@dimen/margin_30"
+                android:layout_marginTop="@dimen/margin_15"
+                android:background="@drawable/selecter_rectangle_hollow"
+                android:drawableLeft="@drawable/camera"
+                android:drawablePadding="@dimen/margin_10"
+                android:hint="@string/bind_device_input_image_hint"
+                android:paddingLeft="@dimen/size_10"
+                android:singleLine="true"
+                android:editable="false"
+                android:textSize="@dimen/font_medium" />
+
+
+            <ImageView
+                android:id="@+id/bind_device_headimg"
+                android:layout_width="@dimen/height_140"
+                android:layout_height="@dimen/height_140"
+                android:layout_below="@id/bind_device_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_15"
+                android:src="@drawable/touxiang_empty"
+                />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="@dimen/height_150"
+                android:layout_height="@dimen/height_40"
+                android:layout_below="@+id/bind_device_headimg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:layout_marginLeft="@dimen/size_15"
+                android:layout_marginRight="@dimen/size_15"
+                android:layout_marginTop="@dimen/margin_30"
+                android:background="@drawable/selecter_bind_device_hollow_green"
+                android:gravity="center"
+                android:text="@string/reset_password_comfirm"
+                android:textColor="@color/color_title_green" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+

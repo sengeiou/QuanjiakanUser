@@ -1,0 +1,220 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    >
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_title">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/size_12"
+                android:layout_marginBottom="@dimen/size_12"
+                android:background="@drawable/selecter_white_round_10"
+                >
+
+                <!--android:drawableLeft="@drawable/ic_shop_cart"-->
+                <TextView
+                    android:id="@+id/tv_medcine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_medium"
+                    android:textColor="@color/hei222"
+                    android:paddingTop="@dimen/size_15"
+                    android:paddingBottom="@dimen/size_15"
+                    android:paddingLeft="@dimen/size_15"
+                    android:text="@string/setting_entry_my_orders"
+                    android:gravity="center_vertical"
+                    />
+
+                <View
+                    android:id="@+id/tv_fenge"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_1"
+                    android:background="@color/main_bg_color"
+                    />
+
+                <!--android:drawableLeft="@drawable/ic_order"-->
+                <TextView
+                    android:id="@+id/tv_housekeeper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_medium"
+                    android:textColor="@color/hei222"
+                    android:text="@string/setting_entry_my_reserve"
+                    android:paddingTop="@dimen/size_15"
+                    android:paddingBottom="@dimen/size_15"
+                    android:paddingLeft="@dimen/size_15"
+                    android:gravity="center_vertical"
+
+                    />
+
+                <View
+                    android:id="@+id/tv_fenge2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_1"
+                    android:background="@color/main_bg_color"
+                    />
+
+                <!--android:drawableLeft="@drawable/ic_consultant"-->
+                <TextView
+                    android:id="@+id/tv_consultant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_medium"
+                    android:textColor="@color/hei222"
+                    android:text="@string/setting_entry_my_consult"
+                    android:paddingTop="@dimen/size_15"
+                    android:paddingBottom="@dimen/size_15"
+                    android:paddingLeft="@dimen/size_15"
+                    android:gravity="center_vertical"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_1"
+                    android:background="@color/main_bg_color"
+                    />
+
+                <!--android:drawableLeft="@drawable/ic_consultant"-->
+                <TextView
+                    android:id="@+id/tv_insure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_medium"
+                    android:textColor="@color/hei222"
+                    android:text="@string/setting_entry_my_insure"
+                    android:paddingTop="@dimen/size_15"
+                    android:paddingBottom="@dimen/size_15"
+                    android:paddingLeft="@dimen/size_15"
+                    android:gravity="center_vertical"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/selecter_white_round_10"
+                android:layout_below="@+id/layout_1"
+
+                >
+                <!--android:drawableLeft="@drawable/ic_bind_device"-->
+                <TextView
+                    android:id="@+id/tv_device"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_medium"
+                    android:textColor="@color/hei222"
+                    android:paddingTop="@dimen/size_15"
+                    android:paddingBottom="@dimen/size_15"
+                    android:paddingLeft="@dimen/size_15"
+                    android:text="@string/setting_entry_bind_devices"
+                    android:gravity="center_vertical"
+                    />
+
+
+                <View
+                    android:id="@+id/tv_fenge3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_1"
+                    android:background="@color/main_bg_color"
+                    />
+
+                <!--android:drawableLeft="@drawable/ic_changjing"-->
+                <TextView
+                    android:id="@+id/tv_qingjingmoshi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_medium"
+                    android:textColor="@color/hei222"
+                    android:text="@string/setting_entry_scene_setting"
+                    android:paddingTop="@dimen/size_15"
+                    android:paddingBottom="@dimen/size_15"
+                    android:paddingLeft="@dimen/size_15"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/size_6"
+
+                    />
+
+                <View
+                    android:id="@+id/tv_fenge4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_1"
+                    android:background="@color/main_bg_color"
+                    />
+
+                <!--android:drawableLeft="@drawable/ic_number"
+
+                android:drawablePadding="6dp"-->
+
+                <TextView
+                    android:id="@+id/tv_qinqinghaoma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_medium"
+                    android:textColor="@color/hei222"
+                    android:text="@string/setting_entry_family_number"
+                    android:paddingTop="@dimen/size_15"
+                    android:paddingBottom="@dimen/size_15"
+                    android:paddingLeft="@dimen/size_15"
+                    android:gravity="center_vertical"
+                    />
+                <View
+                    android:id="@+id/tv_fenge5"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_1"
+                    android:background="@color/main_bg_color"
+                    />
+
+                <!--android:drawableLeft="@drawable/ic_about_us"
+                android:drawablePadding="6dp"-->
+                <TextView
+                    android:id="@+id/tv_aboutus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_medium"
+                    android:textColor="@color/hei222"
+                    android:text="@string/setting_entry_about_us"
+                    android:paddingTop="@dimen/size_15"
+                    android:paddingBottom="@dimen/size_15"
+                    android:paddingLeft="@dimen/size_15"
+                    android:gravity="center_vertical"
+                    />
+
+                <View
+                    android:id="@+id/tv_fenge6"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_1"
+                    android:background="@color/main_bg_color"
+                    />
+
+                <!--android:drawableLeft="@drawable/ic_setting"-->
+                <TextView
+                    android:id="@+id/tv_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_medium"
+                    android:textColor="@color/hei222"
+                    android:text="@string/setting_entry_more"
+                    android:paddingTop="@dimen/size_15"
+                    android:paddingBottom="@dimen/size_15"
+                    android:paddingLeft="@dimen/size_15"
+                    android:gravity="center_vertical"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    
+</RelativeLayout>    
+

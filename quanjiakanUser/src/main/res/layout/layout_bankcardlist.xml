@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bankcardcolor">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title"
+        />
+
+    <ListView
+        android:id="@+id/lv_banklist"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="0dp"
+        android:divider="@color/bankcardcolor"
+        android:dividerHeight="10dp"
+        android:layout_weight="1">
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/ll_addbankcard"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/addbankcard"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iv_add_card"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:text="添加银行卡"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iv_arrow"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

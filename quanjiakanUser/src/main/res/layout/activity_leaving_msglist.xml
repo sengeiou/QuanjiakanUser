@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title"
+        />
+
+    <LinearLayout
+        android:id="@+id/llt_leaving_msg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40"
+        android:gravity="center_vertical"
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <TextView
+                android:id="@+id/tv_leaving_msg"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="留言"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:textSize="@dimen/font_16"
+                android:drawableLeft="@drawable/search_ioc_message"
+                android:textColor="#333333"
+                />
+            <TextView
+                android:id="@+id/tv_msg_num"
+                android:layout_toRightOf="@id/tv_leaving_msg"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(暂无留言)"
+
+                />
+            <TextView
+                android:id="@+id/more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更多"
+                android:textSize="10sp"
+                android:textColor="#999999"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_10"
+                android:drawableRight="@drawable/message_more"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e7e7e7"
+        android:layout_alignParentBottom="true"
+        />
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@null"
+        android:dividerHeight="@dimen/size_0"
+        android:fastScrollEnabled="false"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none" />
+
+</LinearLayout>

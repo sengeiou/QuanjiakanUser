@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.androidquanjiakan.view.StepArcOldView
+        android:id="@+id/stepoldview"
+        android:layout_width="220dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="220dp"/>
+
+    <TextView
+        android:id="@+id/tv_totaldistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stepoldview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="里程数: 5公里"
+        android:textColor="@color/crop__button_text"
+        android:textSize="14sp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/ll_fragment"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_totaldistance">
+        <LinearLayout
+            android:id="@+id/ll_oneday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@color/backround_color"
+            >
+            <TextView
+                android:id="@+id/tv_oneday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当天步数分布"
+                android:textColor="@color/step_text_color"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:textSize="18sp"/>
+
+            <View
+                android:id="@+id/oneday_div"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/step_text_color"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divider_line"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_sevenday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@color/backround_color"
+            >
+
+            <TextView
+                android:id="@+id/tv_sevenday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="近七天步数分布"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:textColor="@color/step_text_color"
+                android:textSize="18sp"/>
+
+            <View
+                android:id="@+id/sevenday_div"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/step_text_color"
+                android:layout_gravity="center"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_step"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ll_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="5dp"
+        >
+
+    </FrameLayout>
+
+    </RelativeLayout>
+
+    <!--</ScrollView>-->
+
+
+
+</RelativeLayout>

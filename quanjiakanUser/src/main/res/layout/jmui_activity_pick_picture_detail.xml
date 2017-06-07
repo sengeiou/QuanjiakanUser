@@ -1,0 +1,61 @@
+<cn.jmessage.android.uikit.multiselectphotos.PickPictureView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pick_picture_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_title_bar_height"
+        android:background="@color/color_title_green"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/pick_picture_detail_return_btn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/jmui_back_btn_bg"
+            android:src="@drawable/back" />
+
+
+        <Button
+            android:id="@+id/pick_picture_send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/jmui_send_picture_btn_bg"
+            android:padding="5dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:text="发送" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/height_80"
+            android:layout_marginLeft="@dimen/height_40"
+            android:gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:singleLine="true"
+            android:text="@string/my_album"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/child_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:columnWidth="100dip"
+        android:gravity="center"
+        android:horizontalSpacing="5dip"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="auto_fit"
+        android:padding="5dip"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dip"/>
+
+</cn.jmessage.android.uikit.multiselectphotos.PickPictureView>

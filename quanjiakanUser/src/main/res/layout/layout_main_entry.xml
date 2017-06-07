@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refresh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAlphaBlack_22"
+    >
+
+        <!--<include
+            android:id="@+id/title"
+            layout="@layout/layout_title_piece" />-->
+
+        <ScrollView
+            android:id="@+id/scroll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--<ImageView
+                    android:id="@+id/header_img1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/banner" />-->
+                <RelativeLayout
+                    android:id="@+id/header_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_140">
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/header_img1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorSkyBlue"
+                        />
+                    <LinearLayout
+                        android:id="@+id/indicater_list_header"
+                        android:layout_alignBottom="@id/header_img1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_18"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/header_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:id="@+id/member_list1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/userbg"
+                        android:visibility="gone"
+                        >
+                        <ImageView
+                            android:id="@+id/header_img2_insert"
+                            android:layout_width="@dimen/height_80"
+                            android:layout_height="@dimen/height_80"
+                            android:layout_marginLeft="@dimen/margin_20"
+                            android:layout_marginTop="@dimen/margin_20"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/descr_image"
+                            />
+
+                        <ImageView
+                            android:id="@+id/header_img3_insert"
+                            android:layout_width="@dimen/height_60"
+                            android:layout_height="@dimen/height_60"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/add" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/member_list2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/index_userbg"
+
+                        >
+                        <TextView
+                            android:id="@+id/member_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/main_index_family_member"
+                            android:layout_margin="@dimen/margin_10"
+                            android:textColor="@color/colorAlphaBlack_BB"
+                            android:textSize="@dimen/font_14"
+                            />
+                        <HorizontalScrollView
+                            android:id="@+id/hor_sv"
+                            android:layout_below="@id/member_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+                            <LinearLayout
+                                android:id="@+id/member_list_container"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center_vertical"
+                                >
+                            </LinearLayout>
+                        </HorizontalScrollView>
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/items"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_100"
+                    android:layout_below="@id/header_rl"
+                    android:background="@color/colorSkyBlue"
+                    />
+                <LinearLayout
+                    android:id="@+id/indicater_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_18"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@color/colorPureWhite"
+                    >
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_13"
+                    android:background="@color/colorAlphaBlack_05"
+                    />
+
+                <ListView
+                    android:id="@+id/list_items"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/items"
+                    android:divider="@null"></ListView>
+
+            </LinearLayout>
+        </ScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>

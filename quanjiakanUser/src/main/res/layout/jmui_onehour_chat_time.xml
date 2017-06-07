@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/countdown_layout"
+    android:layout_width="88dp"
+    android:layout_height="88dp"
+    android:background="@drawable/img_chat_count_down"
+    android:visibility="gone"
+    >
+    <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#989898"
+        android:text="剩余"
+        android:layout_above="@+id/clock_llt"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/clock_llt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+
+        >
+        <TextView
+            android:id="@+id/minutes_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/colon2"
+            android:textColor="@color/font_color_333333"
+            android:gravity="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/colon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginRight="3.0dip"
+            android:layout_toLeftOf="@+id/seconds_tv"
+            android:textColor="@color/font_color_333333"
+            android:text=":"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/seconds_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/font_color_333333"
+            android:gravity="center"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>
+

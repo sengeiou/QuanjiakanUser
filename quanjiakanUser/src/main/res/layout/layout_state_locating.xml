@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg_color"
+    android:orientation="vertical" >
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title"
+        />
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/map"
+        android:layout_below="@id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:drawableLeft="@drawable/map_icon_down"
+        android:padding="@dimen/margin_15"
+        android:drawablePadding="@dimen/margin_15"
+        android:maxLines="2"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_16"
+        android:background="@color/colorAlphaBlack_55"
+        />
+
+    <ImageView
+        android:id="@+id/relocate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_male_light"
+        android:layout_above="@id/address"
+        android:layout_marginBottom="@dimen/margin_15"
+        android:layout_marginLeft="@dimen/margin_15"
+        />
+
+</RelativeLayout>

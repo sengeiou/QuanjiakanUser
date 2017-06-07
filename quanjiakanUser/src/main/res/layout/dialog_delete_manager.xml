@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_myinfo_changebirth"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ly_myinfo_changebirth_child"
+        android:layout_width="@dimen/height_300"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_selector"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_18"
+            android:text="管理员删除"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_18" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="管理员管理员管理员管理员管理员管理员管理员管理员管理员管理员"
+                android:textSize="@dimen/font_14"
+                android:textColor="@color/font_color_666666"
+                />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_40"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/size_28"
+            >
+
+            <TextView
+                android:id="@+id/btn_sure"
+                android:layout_width="@dimen/height_120"
+                android:layout_height="match_parent"
+                android:text="@string/confirm"
+                android:gravity="center"
+                android:textSize="@dimen/font_18"
+                android:textColor="@color/font_color_0e7b7b"
+                android:background="@drawable/selecter_hollow_gray"
+                />
+
+            <TextView
+                android:id="@+id/btn_cancel"
+                android:layout_toRightOf="@id/btn_sure"
+                android:layout_marginLeft="@dimen/size_28"
+                android:layout_width="@dimen/height_120"
+                android:layout_height="match_parent"
+                android:text="@string/cancel"
+                android:gravity="center"
+                android:textSize="@dimen/font_18"
+                android:textColor="@color/font_color_666666"
+                android:background="@drawable/selecter_hollow_gray"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/steps_bg">
+
+    <!--<include
+        android:id="@+id/title"
+        layout="@layout/layout_title"
+        />-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <ImageButton
+            android:id="@+id/ibtn_back"
+            android:layout_width="@dimen/common_title_bar_height"
+            android:layout_height="@dimen/common_title_bar_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/transparent"
+            android:src="@drawable/back"
+            android:visibility="invisible"
+            android:scaleType="centerInside"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common_title_bar_height"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:text="Title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_big" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        >
+
+        <com.androidquanjiakan.view.StepArcView
+            android:id="@+id/stepview"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="300dp"/>
+        
+        
+        <TextView
+            android:id="@+id/tv_update_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改设定目标步数"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:layout_below="@+id/stepview"
+            android:textColor="@color/font_color_666666"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

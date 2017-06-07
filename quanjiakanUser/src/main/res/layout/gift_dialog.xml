@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlt_gift"
+    android:background="@android:color/black"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rlt_grid"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+
+        >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout
+            android:id="@+id/points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/time_count"
+        android:layout_alignBottom="@+id/rlt"
+        android:layout_alignParentRight="true"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/design_red_point"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:visibility="gone"
+        android:textColor="@android:color/white" />
+
+    <RelativeLayout
+        android:id="@+id/rlt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:layout_below="@+id/rlt_grid"
+        android:layout_toRightOf="@+id/time_count"
+        android:layout_toEndOf="@+id/time_count">
+        <ImageView
+            android:id="@+id/e_dou"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/edou_chengyi"
+            />
+
+        <TextView
+            android:layout_toRightOf="@+id/e_dou"
+            android:id="@+id/tv_edou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:textSize="10sp"
+            android:textColor="#FFFFFF"
+            android:text="E豆 :"
+            />
+
+        <TextView
+            android:layout_toRightOf="@+id/tv_edou"
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:textSize="10sp"
+            android:textColor="#FFFFFF"
+            android:text="0.00"
+            />
+
+        <ImageView
+            android:layout_toRightOf="@+id/tv_price"
+            android:id="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+
+            />
+
+        <TextView
+            android:layout_toRightOf="@+id/line"
+            android:id="@+id/add_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:text="充值"
+            android:textSize="12sp"
+            android:textColor="#FFF1AD4F"
+
+            />
+
+        <ImageView
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/gift_send_selector"
+            />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

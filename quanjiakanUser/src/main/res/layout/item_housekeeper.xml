@@ -1,0 +1,154 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/size_10"
+    android:paddingBottom="@dimen/size_10"
+    android:background="@color/white"
+    >
+    
+    <ImageView 
+        android:id="@+id/image"
+        android:layout_width="@dimen/height_70"
+        android:layout_height="@dimen/height_70"
+        android:layout_marginLeft="@dimen/size_8"
+        android:scaleType="fitCenter"
+        />
+    
+    
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/hei222" 
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/image"
+        android:text="张杰"
+        android:layout_marginLeft="@dimen/size_8"
+        android:layout_marginTop="@dimen/size_4"
+        android:maxLines="3"
+        />
+
+    <TextView
+        android:id="@+id/tv_name_recommond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPureWhite"
+        android:textSize="@dimen/font_10"
+        android:layout_toRightOf="@+id/tv_name"
+        android:text="系统推荐"
+        android:gravity="center"
+        android:background="@drawable/selecter_hollow_orange"
+        android:paddingTop="@dimen/size_2"
+        android:paddingBottom="@dimen/size_2"
+        android:paddingLeft="@dimen/size_5"
+        android:paddingRight="@dimen/size_5"
+        android:layout_marginLeft="@dimen/size_10"
+        android:layout_marginTop="@dimen/size_4"
+        android:maxLines="3"
+        />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4000/月"
+        android:textColor="@color/red"
+        android:textSize="@dimen/font_small"
+        android:singleLine="true"
+        android:layout_marginLeft="@dimen/size_8"
+        android:layout_marginTop="@dimen/size_4"
+        android:layout_toRightOf="@id/tv_name_recommond"
+        />
+
+    <TextView
+        android:id="@+id/tv_house_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_tags"
+        android:layout_toRightOf="@+id/image"
+        android:textSize="14sp"
+        android:text="12.99"
+        android:singleLine="true"
+        android:textColor="@color/hei"
+        android:layout_marginLeft="@dimen/size_8"
+        android:layout_marginTop="@dimen/margin_10"
+        />
+
+    <RelativeLayout
+        android:id="@+id/layout_tags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/image"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginLeft="@dimen/size_8"
+        android:layout_marginTop="@dimen/margin_10"
+        >
+        <TextView
+            android:id="@+id/tv_baomu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/size_3"
+            android:paddingBottom="@dimen/size_3"
+            android:paddingLeft="@dimen/size_10"
+            android:paddingRight="@dimen/size_10"
+            android:background="@drawable/shape_tags_maincolor"
+            android:textColor="@color/maincolor"
+            android:text="保姆"
+            android:textSize="@dimen/font_small"
+            />
+
+        <TextView
+            android:id="@+id/tv_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/size_3"
+            android:paddingBottom="@dimen/size_3"
+            android:paddingLeft="@dimen/size_10"
+            android:paddingRight="@dimen/size_10"
+            android:background="@drawable/shape_tags_maincolor"
+            android:textColor="@color/maincolor"
+            android:layout_toRightOf="@id/tv_baomu"
+            android:text="45岁"
+            android:textSize="@dimen/font_small"
+            android:layout_marginLeft="@dimen/size_6"
+            />
+
+        <TextView
+            android:id="@+id/tv_from_region"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/size_3"
+            android:paddingBottom="@dimen/size_3"
+            android:paddingLeft="@dimen/size_10"
+            android:paddingRight="@dimen/size_10"
+            android:background="@drawable/shape_tags_maincolor"
+            android:text="广东"
+            android:layout_toRightOf="@+id/tv_age"
+            android:textSize="@dimen/font_small"
+            android:textColor="@color/maincolor"
+            android:layout_marginLeft="@dimen/size_6"
+            />
+
+        <!--<TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/size_3"
+            android:paddingBottom="@dimen/size_3"
+            android:paddingLeft="@dimen/size_10"
+            android:paddingRight="@dimen/size_10"
+            android:gravity="right"
+            android:text="4000/月"
+            android:textColor="@color/red"
+            android:textSize="@dimen/font_small"
+            android:singleLine="true"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/tv_from_region"
+            />   -->
+
+    </RelativeLayout>
+
+</RelativeLayout>

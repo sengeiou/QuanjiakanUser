@@ -1,0 +1,72 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/height_280"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_dialog_bg"
+
+	android:orientation="vertical"
+    >
+    <TextView
+		android:layout_width="@dimen/height_200"
+		android:layout_height="wrap_content"
+		android:text="请评价本次服务"
+		android:layout_marginTop="@dimen/margin_20"
+		android:textColor="@color/font_color_333333"
+		android:textSize="@dimen/font_16"
+		android:layout_marginLeft="@dimen/margin_25"
+		android:layout_marginRight="@dimen/margin_25"
+		/>
+	<View
+		android:layout_width="@dimen/height_250"
+		android:layout_height="@dimen/size_1p"
+		android:background="@color/font_color_CCCCCC"
+		android:layout_marginTop="@dimen/margin_10"
+		/>
+	<RatingBar
+		android:id="@+id/rating"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:numStars="5"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="@dimen/margin_10"
+		android:layout_marginBottom="@dimen/margin_10"
+		style="@style/freeInquiryRatingBar"
+		/>
+	<EditText
+		android:id="@+id/evaluate"
+		android:layout_width="@dimen/height_250"
+		android:layout_height="wrap_content"
+		android:textColor="@color/font_color_333333"
+		android:textSize="@dimen/font_14"
+		android:hint="让我们了解您对本次服务的感受"
+		android:padding="@dimen/margin_10"
+		android:textColorHint="@color/font_color_999999"
+		android:background="@null"
+		/>
+	<RelativeLayout
+		android:layout_width="@dimen/height_250"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/margin_15"
+		android:layout_marginTop="@dimen/margin_10" >
+
+		<TextView
+			android:id="@+id/btn_confirm"
+			android:layout_width="@dimen/height_77"
+			android:layout_height="@dimen/height_33"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="@dimen/margin_15"
+			android:gravity="center"
+			android:text="@string/confirm"
+			android:textSize="@dimen/font_14" />
+
+		<TextView
+			android:id="@+id/btn_cancel"
+			android:layout_width="@dimen/height_77"
+			android:layout_height="@dimen/height_33"
+			android:layout_toLeftOf="@+id/btn_confirm"
+			android:gravity="center"
+			android:text="@string/cancel"
+			android:textSize="@dimen/font_14" />
+	</RelativeLayout>
+</LinearLayout>

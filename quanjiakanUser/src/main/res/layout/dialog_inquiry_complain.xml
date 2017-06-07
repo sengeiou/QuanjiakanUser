@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/height_250"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_dialog_bg">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_mark"
+            android:layout_width="@dimen/size_4"
+            android:layout_height="@dimen/size_18"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@color/maincolor"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/height_16"
+            android:layout_weight="1"
+            android:text="说明书"
+            android:textColor="@color/colorAlphaBlack_EE"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/rl_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/exit"
+                android:layout_width="@dimen/height_15"
+                android:layout_height="@dimen/height_15"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/height_15"
+                android:layout_marginRight="@dimen/height_15"
+                android:background="@drawable/housekeeper_detail_close_dialog" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/diviver_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:layout_below="@+id/header"
+        android:background="@color/colorAlphaBlack_11" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_below="@id/diviver_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="投诉"
+            android:textColor="@color/font_color_333333"
+            android:textSize="@dimen/font_20"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/margin_10"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客服电话:"
+                android:textColor="@color/font_color_333333"
+                android:textSize="@dimen/font_16"
+                android:layout_marginRight="@dimen/margin_10"
+                />
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4006-2452-31"
+                android:textColor="@color/color_14a9a8"
+                android:textSize="@dimen/font_16"
+                android:layout_marginRight="@dimen/margin_10"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/margin_10"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="客服工作时间:"
+                android:textColor="@color/font_color_333333"
+                android:textSize="@dimen/font_16"
+                android:layout_marginRight="@dimen/margin_10"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="09:00-21:00"
+                android:textColor="@color/font_color_666666"
+                android:textSize="@dimen/font_16"
+                android:layout_marginRight="@dimen/margin_10"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/call"
+            android:layout_width="@dimen/height_100"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/size_8"
+            android:layout_gravity="center"
+            android:textColor="@color/color_title_green"
+            android:textSize="@dimen/font_big"
+            android:text="呼叫"
+            android:layout_marginBottom="@dimen/size_10"
+            android:layout_marginLeft="@dimen/size_10"
+            android:layout_marginRight="@dimen/size_10"
+            android:layout_marginTop="@dimen/size_30"
+            android:background="@drawable/selecter_hollow_green_transport"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

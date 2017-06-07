@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/size_15"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginBottom="@dimen/size_11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="@dimen/size_48"
+                android:layout_height="@dimen/size_48"
+                android:src="@drawable/list_pic_portrait"
+                />
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/size_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/size_16"
+                    android:textColor="@color/font_color_333333"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_flag"
+                    android:layout_toRightOf="@id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(管理员)"
+                    android:textSize="@dimen/size_16"
+                    android:textColor="@color/color_xun_ing"
+                    />
+
+                <TextView
+                    android:layout_marginTop="@dimen/size_5"
+                    android:layout_below="@id/tv_name"
+                    android:id="@+id/tv_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/size_11"
+                    android:textColor="@color/font_color_999999"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/flag_icon"
+                    android:layout_marginTop="@dimen/size_5"
+                    android:layout_toRightOf="@id/tv_number"
+                    android:layout_below="@id/tv_name"
+                    android:layout_width="@dimen/size_24"
+                    android:layout_height="@dimen/size_14"
+                    android:src="@drawable/list_iocn_app"
+                    android:layout_marginLeft="@dimen/size_11"
+                    />
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/size_3"
+        android:layout_marginLeft="@dimen/size_20"
+        android:layout_marginRight="@dimen/size_20"
+        android:background="@color/font_color_EEEEEE"
+        />
+
+</LinearLayout>

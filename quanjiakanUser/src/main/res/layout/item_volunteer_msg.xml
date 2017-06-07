@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+    
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/height_40"
+        android:layout_height="@dimen/height_40"
+        android:scaleType="fitXY"
+        android:src="@drawable/search_ico_portrait"
+        />
+
+    <RelativeLayout
+        android:id="@+id/llt_1"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tv_volun_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张开明-义工"
+            android:textSize="@dimen/font_14"
+            android:textColor="#999999"
+            />
+
+        <!--<TextView
+            android:id="@+id/tv_find_time"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-08-23 18:00"
+            android:textSize="@dimen/font_14"
+            android:textColor="#999999"
+            />-->
+
+
+    </RelativeLayout>
+
+    <!--<RatingBar
+        android:id="@+id/rb_star"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:layout_below="@+id/llt_1"
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5"
+        style="@style/RedStartRatingBar"
+        />-->
+    <TextView
+        android:id="@+id/tv_find_time"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:layout_below="@+id/llt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:text="2016-08-23 18:00"
+        android:textSize="@dimen/font_14"
+        android:textColor="#999999"
+        />
+
+    <TextView
+        android:id="@+id/tv_describe"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:layout_below="@+id/tv_find_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:text="我在西村地铁口2号口找到小姑娘..."
+        android:textSize="@dimen/font_14"
+        android:textColor="#999999"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e7e7e7"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+
+
+</RelativeLayout>

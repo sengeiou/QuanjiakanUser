@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fengexian">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_title" />
+
+
+    <!--<com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:divider="@color/colorAlphaBlack_22"
+        android:dividerHeight="@dimen/size_1"
+        android:fastScrollEnabled="false"
+        android:listSelector="@color/transparent"
+        android:layout_above="@+id/layout_paid"
+        android:scrollbars="none"
+        />
+
+    <RelativeLayout
+        android:id="@+id/hint"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/bottom"
+            android:layout_width="@dimen/height_150"
+            android:layout_height="@dimen/height_150"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circle_bottom"
+            />
+        <ImageView
+            android:id="@+id/middle"
+            android:layout_width="@dimen/height_150"
+            android:layout_height="@dimen/height_150"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circle_middle"
+            />
+        <ImageView
+            android:id="@+id/top"
+            android:layout_width="@dimen/height_50"
+            android:layout_height="@dimen/height_50"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circle_top"
+            />
+    </RelativeLayout>-->
+
+    <ImageView
+        android:id="@+id/iv_nomes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:src="@drawable/message_group_ico_sel"
+        />
+
+    <TextView
+        android:id="@+id/tv_nomes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_nomes"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:text="您好现在暂时没有消息"
+        />
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_all"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="34dp"
+                        android:layout_marginTop="23dp"
+                        android:src="@drawable/message_banner_pic" />
+
+                    <ListView
+                        android:id="@+id/listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/main_bg_color"
+                        android:divider="@color/main_bg_color"
+                        android:dividerHeight="12dp">
+
+                    </ListView>
+                </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

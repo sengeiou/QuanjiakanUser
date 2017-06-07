@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/size_65"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+
+    >
+
+    <com.androidquanjiakan.view.RoundImageView
+        android:id="@+id/bg"
+        android:layout_marginTop="@dimen/size_5"
+        android:layout_width="@dimen/size_60"
+        android:layout_height="@dimen/size_60"
+        android:scaleType="center"
+        app:borderRadius="@dimen/size_5"
+        app:type="round"
+        android:layout_marginBottom="@dimen/size_10"
+        android:background="@drawable/selecter_device_container_bg" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/notice"-->
+        <!--android:layout_width="@dimen/size_12"-->
+        <!--android:layout_height="@dimen/size_12"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:background="@drawable/selector_red_point"-->
+        <!--android:visibility="visible"-->
+        <!--/>-->
+
+    <com.androidquanjiakan.view.MaterialBadgeTextView
+        android:id="@+id/notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/common_red"
+        android:visibility="invisible"
+        />
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="@dimen/size_60"
+        android:layout_height="@dimen/size_20"
+        android:layout_alignBottom="@id/bg"
+        android:layout_alignLeft="@id/bg"
+        android:layout_alignRight="@id/bg"
+        android:background="@drawable/selecter_device_container_normal"
+        android:gravity="center"
+        android:text="爸爸"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_10" />
+
+
+</RelativeLayout>

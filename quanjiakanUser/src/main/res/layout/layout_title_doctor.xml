@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_title"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_title_bar_height"
+    android:background="@color/holo_blue_light" >
+
+    <ImageButton
+        android:id="@+id/ibtn_back"
+        android:layout_width="@dimen/common_title_bar_height"
+        android:layout_height="@dimen/common_title_bar_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent"
+        android:src="@drawable/back"
+        android:visibility="invisible"
+        android:scaleType="centerInside"
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_title_bar_height"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:text="Name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_big" />
+
+    <ImageButton
+        android:id="@+id/ibtn_menu"
+        android:layout_width="@dimen/common_title_bar_height"
+        android:layout_height="@dimen/common_title_bar_height"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_shop_cart_light"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:background="@color/transparent" />
+
+    <TextView
+        android:id="@+id/menu_text"
+        android:layout_width="@dimen/height_60"
+        android:layout_height="@dimen/common_title_bar_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="添加"
+        android:textSize="@dimen/font_16"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

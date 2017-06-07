@@ -1,0 +1,41 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+    
+    <ImageView 
+        android:id="@+id/image_icon"
+        android:layout_width="@dimen/height_50"
+        android:layout_height="@dimen/height_50"
+        android:src="@drawable/ic_patient"
+        android:layout_alignParentRight="true"
+        /> 
+            
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="@dimen/height_120"
+        android:layout_height="@dimen/height_40"
+        android:textColor="@color/white" 
+        android:textSize="@dimen/font_medium"
+        android:background="#0088A8"
+        android:layout_toLeftOf="@+id/image_icon"
+        android:layout_marginRight="@dimen/size_8"
+        android:layout_marginTop="@dimen/size_5"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/size_8"
+        />
+    
+    <ImageView 
+        android:id="@+id/image_anim"
+        android:layout_width="@dimen/height_25"
+        android:layout_height="@dimen/height_25"
+        android:layout_alignRight="@+id/tv_title"
+        android:layout_marginTop="@dimen/size_12"
+        android:layout_marginRight="@dimen/size_5"
+        android:src="@drawable/ic_voice_all_right"
+        />
+
+</RelativeLayout>

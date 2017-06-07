@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_bg_color"
+    >
+
+    <include 
+        layout="@layout/layout_title"
+        android:id="@+id/layout_title"
+        />
+    
+    <RelativeLayout 
+        android:id="@+id/layout_datas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_title"
+        android:layout_marginTop="@dimen/size_8"
+        android:visibility="gone"
+        >
+        
+	    <TextView 
+	        android:id="@+id/tv_1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="@dimen/size_8"
+	        android:textColor="@color/hei222"
+	        android:textSize="@dimen/font_medium"
+	        android:text="请选择病人档案"
+	        />	        
+        
+	    <LinearLayout 
+	        android:layout_marginTop="@dimen/size_8"
+	        android:id="@+id/layout_items"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:dividerPadding="@dimen/size_1"
+	        android:divider="@color/qianhei"
+	        android:background="@color/qianhui"
+	        android:layout_marginLeft="@dimen/size_8"
+	        android:layout_marginRight="@dimen/size_8"
+	        android:layout_below="@+id/tv_1"
+	        >
+	        
+	    </LinearLayout>  
+        
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/hei222"
+        android:textSize="@dimen/font_medium"
+        android:layout_below="@+id/layout_datas"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/tv_2"
+        >
+        
+        <RelativeLayout 
+            android:id="@+id/layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_8"
+            android:background="@drawable/selecter_whitebg_strike_alpha11"
+            android:layout_marginLeft="@dimen/size_8"
+            android:layout_marginRight="@dimen/size_8"
+            android:layout_marginBottom="@dimen/size_1"
+            >
+            
+            <TextView 
+                android:id="@+id/tv_name_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="姓名"
+                android:textColor="@color/colorAlphaBlack_EE"
+                />
+            
+            <EditText 
+                android:id="@+id/et_name_value"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_30"
+                android:background="@color/white"
+                android:layout_toRightOf="@+id/tv_name_key"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/size_2"
+                android:gravity="right|center_vertical"
+                android:hint="请输入姓名"
+				android:textColorHint="@color/colorAlphaBlack_77"
+                android:textSize="@dimen/font_medium"
+                />
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:id="@+id/layout_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_8"
+            android:background="@drawable/selecter_whitebg_strike_alpha11"
+            android:layout_marginLeft="@dimen/size_8"
+            android:layout_marginRight="@dimen/size_8"
+			android:layout_marginTop="@dimen/margin_10"
+			android:layout_marginBottom="@dimen/margin_10"
+            >
+            
+            <TextView 
+                android:id="@+id/tv_gender_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="性别"
+                android:textColor="@color/colorAlphaBlack_EE"
+                />
+            
+            <RadioGroup 
+                android:id="@+id/rgp"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_30"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                >
+                <RadioButton 
+                    android:id="@+id/rbtn_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_30"
+                    android:padding="@dimen/size_4"
+                    android:drawableRight="@drawable/selector_patient_case_male"
+                    android:text="男"
+                    android:button="@null"
+                    android:layout_marginRight="@dimen/size_4"
+                    android:textColor="@color/colorAlphaBlack_EE"
+                    android:textSize="@dimen/font_medium"
+                    android:drawablePadding="@dimen/size_4"
+                    />
+                <RadioButton 
+                    android:id="@+id/rbtn_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_30"
+                    android:drawableRight="@drawable/selector_patient_case_female"
+                    android:button="@null"
+                    android:text="女"
+                    android:padding="@dimen/size_4"
+                    android:textColor="@color/colorAlphaBlack_EE"
+                    android:textSize="@dimen/font_medium"
+                    android:drawablePadding="@dimen/size_4"
+                    android:checked="true"
+                    />
+                
+            </RadioGroup>
+            
+        </RelativeLayout>  
+        
+        
+        <RelativeLayout 
+            android:id="@+id/layout_birth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_8"
+            android:background="@drawable/selecter_whitebg_strike_alpha11"
+            android:layout_marginLeft="@dimen/size_8"
+            android:layout_marginRight="@dimen/size_8"
+            android:layout_marginTop="@dimen/size_1"
+            >
+            
+            <TextView 
+                android:id="@+id/tv_birth_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="年龄"
+               	android:textColor="@color/colorAlphaBlack_EE"
+                />
+            
+			<EditText 
+                android:id="@+id/et_birth_value"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_30"
+                android:background="@color/white"
+                android:layout_toRightOf="@+id/tv_birth_key"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/size_2"
+                android:gravity="right|center_vertical"
+                android:hint="请输入年龄"
+				android:textColorHint="@color/colorAlphaBlack_77"
+                android:textSize="@dimen/font_medium"
+                android:inputType="text|number"
+                />
+            
+            
+        </RelativeLayout>        
+        
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/tv_submit"
+        android:layout_width="@dimen/height_150"
+		android:layout_below="@id/layout_new"
+        android:layout_height="@dimen/height_40"
+        android:layout_margin="@dimen/margin_30"
+        android:gravity="center"
+		android:textColor="@color/color_title_green"
+		android:background="@drawable/selecter_bind_device_hollow_green"
+        android:text="@string/confirm"
+		android:layout_centerHorizontal="true"
+        />
+    
+    
+</RelativeLayout>

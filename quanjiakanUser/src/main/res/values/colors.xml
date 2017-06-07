@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+   <color name="white">#ffffff</color>
+   <color name="maincolor">#00a651</color>
+   <color name="transparent">#00000000</color>
+   <color name="transparent_white">#00FFFFFF</color>
+   <color name="hei">#898989</color>
+   <color name="hei55">#555555</color>
+   <color name="hei222">#222222</color>
+   <color name="qianhei">#ababab</color>
+   <color name="qianhui">#f0f0f0</color>
+
+   <!-- 242 243 245 -->
+   <color name="main_bg_color">#f2f3f5</color>
+
+
+   <color name="live_play_yellow_name">#C7A949</color>
+
+
+   <color name="fengexian">#efefef</color>
+   <color name="red">#ff2a2a</color>
+   <color name="red_fb4848">#fb4848</color>
+   <color name="red_f">#e54141</color>
+   <color name="red_e">#ed0101</color>
+   <color name="red_f42020">#f42020</color>
+
+   <color name="crop__button_bar">#f3f3f3</color>
+   <color name="crop__button_text">#666666</color>
+   <color name="crop__selector_pressed">#1a000000</color>
+   <color name="crop__selector_focused">#77000000</color>
+   
+   <color name="selector_urgency">#17A8A8</color>
+   
+   <!-- qrcode colors -->
+   <color name="contents_text">#ff000000</color>
+   <color name="encode_view">#ffffffff</color>
+   <color name="help_button_view">#ffcccccc</color>
+   <color name="help_view">#ff404040</color>
+   <color name="possible_result_points">#c0ffff00</color>  
+   <color name="result_image_border">#ffffffff</color>
+   <color name="result_minor_text">#ffc0c0c0</color>
+   <color name="result_points">#c000ff00</color>
+   <color name="result_text">#ffffffff</color>
+   <color name="result_view">#b0000000</color>
+   <color name="sbc_header_text">#ff808080</color>
+   <color name="sbc_header_view">#ffffffff</color>
+   <color name="sbc_list_item">#fffff0e0</color>
+   <color name="sbc_layout_view">#ffffffff</color>
+   <color name="sbc_page_number_text">#ff000000</color>
+   <color name="sbc_snippet_text">#ff4b4b4b</color>
+   <color name="share_text">#ff000000</color>
+   <color name="share_view">#ffffffff</color>
+   <color name="status_view">#50000000</color>
+   <color name="status_text">#ffffffff</color>
+   <color name="viewfinder_frame">#ff000000</color>
+   <color name="viewfinder_laser">#ffff0000</color>
+   <color name="viewfinder_mask">#60000000</color>
+
+
+   <color name="color_green_33cc66">#33cc66</color>
+   <color name="color_green_339966">#339966</color>
+
+   <color name="color_dcdcdc">#dcdcdc</color>
+   <color name="color_f6fbfb">#f6fbfb</color>
+   <color name="color_6f6f6f">#6f6f6f</color>
+   <color name="color_e32b2b">#e32b2b</color>
+
+   <color name="common_divider_line_color">#dcdcdc</color>
+
+   <color name="colorPrimary">#3F51B5</color>
+   <color name="colorPrimaryDark">#303F9F</color>
+   <color name="colorAccent">#FF4081</color>
+   <color name="colorSkyBlue">#8EE5EE</color>
+   <color name="colorGlassGreen">#C0FF3E</color>
+   <color name="colorNormalGrey">#EAEAEA</color>
+   <color name="colorNormalGrey1">#DFDFDF</color>
+
+   <color name="colorAlphaWhite_55">#55FFFFFF</color>
+   <color name="colorAlphaWhite_BB">#BBFFFFFF</color>
+   <color name="colorAlphaWhite_CC">#CCFFFFFF</color>
+   <color name="colorAlphaWhite_DD">#DDFFFFFF</color>
+   <color name="colorAlphaWhite_EE">#EEFFFFFF</color>
+   <color name="colorPureWhite">#FFFFFF</color>
+   <color name="colorOrange">#f1c232</color>
+
+   <color name="divider_d1d1d1">#d1d1d1</color>
+   <color name="divider_f8f8f8">#f8f8f8</color>
+
+
+
+   <color name="colorAlphaBlack_00">#00000000</color>
+   <color name="colorAlphaBlack_01">#01000000</color>
+   <color name="colorAlphaBlack_02">#02000000</color>
+   <color name="colorAlphaBlack_03">#03000000</color>
+   <color name="colorAlphaBlack_04">#04000000</color>
+   <color name="colorAlphaBlack_05">#05000000</color>
+   <color name="colorAlphaBlack_09">#09000000</color>
+   <color name="colorAlphaBlack_11">#11000000</color>
+   <color name="colorAlphaBlack_22">#22000000</color>
+   <color name="colorAlphaBlack_33">#33000000</color>
+   <color name="colorAlphaBlack_44">#44000000</color>
+   <color name="colorAlphaBlack_55">#55000000</color>
+   <color name="colorAlphaBlack_66">#66000000</color>
+   <color name="colorAlphaBlack_77">#77000000</color>
+   <color name="colorAlphaBlack_88">#88000000</color>
+   <color name="colorAlphaBlack_99">#99000000</color>
+   <color name="colorAlphaBlack_AA">#AA000000</color>
+   <color name="colorAlphaBlack_BB">#BB000000</color>
+   <color name="colorAlphaBlack_CC">#CC000000</color>
+   <color name="colorAlphaBlack_DD">#DD000000</color>
+   <color name="colorAlphaBlack_EE">#EE000000</color>
+   <color name="colorPureBlack">#000000</color>
+   <color name="colorTransport">#00000000</color>
+
+   <color name="color_countTextColor">#666666</color>
+
+
+   <!--
+   35cbcb  浅色
+   16A9A8  深色
+   -->
+   <color name="color_title_green">#35cbcb</color>
+   <color name="color_title_green_alpha">#7735cbcb</color>
+
+
+   <color name="color_00b2b2">#00b2b2</color>
+   <color name="color_eef3f6">#eef3f6</color>
+
+   <!-- 218,243,243
+   -->
+   <color name="color_setting_modify_background">#daf3f3</color>
+
+   <color name="color_conversation_list_msg">#323333</color>
+   <color name="color_conversation_list_info">#aaaaaa</color>
+   <color name="color_conversation_list_status_unread">#999999</color>
+   <color name="color_conversation_list_status_read">#e9504f</color>
+
+
+   <color name="holo_blue_light">#ff33b5e5</color>
+   <color name="holo_green_light">#ff99cc00</color>
+   <color name="holo_red_light">#ffff4444</color>
+   <color name="holo_orange_light">#ffffbb33</color>
+   <color name="holo_blue_bright">#ff00ddff</color>
+   <color name="holo_gray_bright">#33CCCCCC</color>
+   <color name="holo_purple">#ffaa66cc</color>
+   <color name="holo_yellow">#ff9900</color>
+
+
+
+   <color name="color_14a9a8">#14a9a8</color>
+
+
+   <color name="send_press_color">#346fc3</color>
+
+
+   <color name="jmui_chat_text_color">#373334</color>
+   <color name="jmui_item_click_bg_color">#dddddd</color>
+   <color name="jmui_jpush_blue">#3f80dc</color>
+   <color name="jmui_send_press_color">#346fc3</color>
+   <color name="jmui_default_cursor_color">#8db4eb</color>
+   <color name="jmui_chat_detail_split_line_color">#d4d4d4</color>
+   <color name="jmui_translucent_background">#60000000</color>
+
+   <color name="font_color_000000">#000000</color>
+   <color name="font_color_111111">#111111</color>
+   <color name="font_color_222222">#222222</color>
+   <color name="font_color_323333">#323333</color>
+   <color name="font_color_333333">#333333</color>
+   <color name="font_color_444444">#444444</color>
+   <color name="font_color_555555">#555555</color>
+   <color name="font_color_666666">#666666</color>
+   <color name="font_color_777777">#777777</color>
+   <color name="font_color_888888">#888888</color>
+   <color name="font_color_999999">#999999</color>
+   <color name="font_color_AAAAAA">#AAAAAA</color>
+   <color name="font_color_BBBBBB">#BBBBBB</color>
+   <color name="font_color_CCCCCC">#CCCCCC</color>
+   <color name="font_color_DDDDDD">#DDDDDD</color>
+   <color name="font_color_EEEEEE">#EEEEEE</color>
+   <color name="font_color_FFFFFF">#FFFFFF</color>
+   <color name="font_color_0e7b7b">#0E7B7B</color>
+   <color name="font_color_a9a9a9">#a9a9a9</color>
+   <color name="font_color_15A9A9">#15A9A9</color>
+   <color name="font_color_797979">#797979</color>
+   <color name="font_color_7a7a7a">#7a7a7a</color>
+   <color name="font_color_616162">#616162</color>
+   <color name="font_color_a5a5a5">#a5a5a5</color>
+   <color name="font_color_c9c9c9">#c9c9c9</color>
+
+   <color name="font_color_7a7a7a_alphaEE">#EE7a7a7a</color>
+   <color name="font_color_616162_alphaEE">#EE616162</color>
+
+   <color name="font_color_rate_great">#cb2122</color>
+   <color name="font_color_rate_good">#e94819</color>
+   <color name="font_color_rate_bad">#1374b2</color>
+   <color name="font_color_12A9A8">#12A9A8</color>
+   <color name="font_color_rate_normal">#000000</color>
+
+   <color name="bankcardcolor">#3A3532</color>
+   <color name="addbankcard">#494440</color>
+   <color name="volunteercom">#318888</color>
+
+   <color name="linecorner">#E2E3E5</color>
+   <color name="warm">#f29c9f</color>
+   <color name="registcolor">#00A651</color>
+
+   <color name="colorSpecialCar">#0db57c</color>
+   <color name="colorHui">#fafafa</color>
+   <color name="colortext">#989898</color>
+
+   <color name="colorxian">#efefef</color>
+   <color name="miaobian">#dddddd</color>
+   <color name="colorendadress">#ffa44a</color>
+   <color name="colorbutton">#0db57c</color>
+   <color name="colortext1">#bbbbbb</color>
+   <color name="colorflag">#E94E4C</color>
+   <color name="color_status">#AEAEAE</color>
+   <color name="color_xun_ing">#00b2b2</color>
+   <color name="color_change">#cccccc</color>
+   <color name="color_btn_look_ing">#0E7b7b</color>
+
+   <color name="edoucolor">#ffcb00</color>
+   <color name="color_btn_green">#01b2b2</color>
+   <color name="color_btn_boder">#017b7b</color>
+
+
+   <color name="currentStep">#78d51c</color>
+   <color name="totalStep">#75bdb9</color>
+   <color name="lineArc">#b8b8b8</color>
+   <color name="totalStepString">#80dad3</color>
+F
+   <color name="step_bg">#6CDED6</color>
+   <color name="step_current">#40d1c5</color>
+   <color name="step_target">#80dad3</color>
+   <color name="select_bg">#eef3f6</color>
+   <color name="select_week_bg">#f44028</color>
+   <color name="disable_week_bg">#14c1b8</color>
+
+
+
+
+   <color name="watch_week_bac">#DCDCDC</color>
+
+   <color name="divider_line">#cbcbcb</color>
+   <color name="backround_color">#dedede</color>
+   <color name="step_text_color">#1c9245</color>
+   <color name="heart_check_color">#2ebbbb</color>
+
+   <color name="update_color">#0e7b7b</color>
+   <color name="common_red">#ed1d1d</color>
+   <color name="call_bg_desc">#ebebeb</color>
+
+
+
+</resources>

@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    >
+
+    <include layout="@layout/layout_title"
+        android:id="@+id/title"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+            <RelativeLayout
+                android:id="@+id/rlt_baby_card"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_55"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginRight="@dimen/size_20"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_icon1"
+                    android:layout_width="@dimen/size_20"
+                    android:layout_height="@dimen/size_20"
+                    android:src="@drawable/administration_ico_card"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_name_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_color_333333"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_icon1"
+                    android:layout_marginLeft="@dimen/size_12"
+                    android:textSize="@dimen/size_17"
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/size_8"
+                    android:layout_height="@dimen/size_15"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/edit_ico_more"
+                    android:layout_centerVertical="true"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/font_color_EEEEEE"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlt_location_mode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_55"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginRight="@dimen/size_20"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_mode"
+                    android:layout_width="@dimen/size_20"
+                    android:layout_height="@dimen/size_20"
+                    android:src="@drawable/administration_ico_location"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手表定位模式"
+                    android:textColor="@color/font_color_333333"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_mode"
+                    android:layout_marginLeft="@dimen/size_12"
+                    android:textSize="@dimen/size_17"
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/size_8"
+                    android:layout_height="@dimen/size_15"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/edit_ico_more"
+                    android:layout_centerVertical="true"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/font_color_EEEEEE"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlt_scene_mode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_55"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginRight="@dimen/size_20"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_scene"
+                    android:layout_width="@dimen/size_20"
+                    android:layout_height="@dimen/size_20"
+                    android:src="@drawable/administration_ico_location"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="情景模式"
+                    android:textColor="@color/font_color_333333"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_scene"
+                    android:layout_marginLeft="@dimen/size_12"
+                    android:textSize="@dimen/size_17"
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/size_8"
+                    android:layout_height="@dimen/size_15"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/edit_ico_more"
+                    android:layout_centerVertical="true"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/font_color_EEEEEE"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlt_default_device"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_55"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginRight="@dimen/size_20"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_icon0"
+                    android:layout_width="@dimen/size_20"
+                    android:layout_height="@dimen/size_20"
+                    android:src="@drawable/administration_ico_default"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="默认手表设备"
+                    android:textColor="@color/font_color_333333"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_icon0"
+                    android:layout_marginLeft="@dimen/size_12"
+                    android:textSize="@dimen/size_17"
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/size_8"
+                    android:layout_height="@dimen/size_15"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/edit_ico_more"
+                    android:layout_centerVertical="true"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/font_color_EEEEEE"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlt_quick_key"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_55"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginRight="@dimen/size_20"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_quick_key"
+                    android:layout_width="@dimen/size_20"
+                    android:layout_height="@dimen/size_20"
+                    android:src="@drawable/administration_ico_key"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手表快捷键设置"
+                    android:textColor="@color/font_color_333333"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_quick_key"
+                    android:layout_marginLeft="@dimen/size_12"
+                    android:textSize="@dimen/size_17"
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/size_8"
+                    android:layout_height="@dimen/size_15"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/edit_ico_more"
+                    android:layout_centerVertical="true"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/font_color_EEEEEE"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlt_open_close"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_65"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginRight="@dimen/size_20"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_icon2"
+                    android:layout_width="@dimen/size_20"
+                    android:layout_height="@dimen/size_20"
+                    android:src="@drawable/administration_ico_switch"
+                    android:layout_marginTop="@dimen/size_16"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_open_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="定制开关机"
+                    android:textColor="@color/font_color_333333"
+                    android:layout_marginTop="@dimen/size_16"
+                    android:layout_toRightOf="@id/iv_icon2"
+                    android:layout_marginLeft="@dimen/size_12"
+                    android:textSize="@dimen/font_16"
+                    />
+
+                <TextView
+                    android:layout_below="@id/tv_open_close"
+                    android:layout_toRightOf="@id/iv_icon2"
+                    android:layout_marginLeft="@dimen/size_12"
+                    android:layout_marginTop="@dimen/size_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="注:充电时,手表会一直保持开机状态,定时开关机不会生效."
+                    android:textSize="@dimen/font_10"
+                    android:textColor="@color/font_color_999999"
+
+                    />
+
+                <!--<ToggleButton-->
+                    <!--android:id="@+id/btn_open_close"-->
+                    <!--android:layout_width="@dimen/size_45"-->
+                    <!--android:layout_height="@dimen/size_25"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:background="@drawable/edit_btn_close"-->
+                    <!--android:textOn=""-->
+                    <!--android:textOff=""-->
+                    <!--android:checked="false"-->
+                    <!--android:layout_marginTop="@dimen/size_16"-->
+                    <!--/>-->
+                <ImageView
+                    android:id="@+id/iv_old_more"
+                    android:layout_width="@dimen/size_8"
+                    android:layout_height="@dimen/size_15"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/edit_ico_more"
+                    android:layout_centerVertical="true"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/font_color_EEEEEE"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlt_electricity"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_65"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginRight="@dimen/size_20"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_electricity"
+                    android:layout_width="@dimen/size_20"
+                    android:layout_height="@dimen/size_20"
+                    android:src="@drawable/administration_ico_electricity"
+                    android:layout_marginTop="@dimen/size_16"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_electricity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="预留电量"
+                    android:textColor="@color/font_color_333333"
+                    android:layout_marginTop="@dimen/size_16"
+                    android:layout_toRightOf="@id/iv_electricity"
+                    android:layout_marginLeft="@dimen/size_12"
+                    android:textSize="@dimen/font_16"
+                    />
+
+                <TextView
+                    android:layout_below="@id/tv_electricity"
+                    android:layout_toRightOf="@id/iv_electricity"
+                    android:layout_marginLeft="@dimen/size_12"
+                    android:layout_marginTop="@dimen/size_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手表电量还有0格时,手表禁用(仅能接听电话)"
+                    android:textSize="@dimen/font_10"
+                    android:textColor="@color/font_color_999999"
+
+                    />
+
+                <ToggleButton
+                    android:id="@+id/btn_electricity"
+                    android:layout_width="@dimen/size_45"
+                    android:layout_height="@dimen/size_25"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/edit_btn_open"
+                    android:textOn=""
+                    android:textOff=""
+                    android:checked="true"
+                    android:layout_marginTop="@dimen/size_16"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/font_color_EEEEEE"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlt_auto_connect"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_65"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginRight="@dimen/size_20"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_icon3"
+                    android:layout_width="@dimen/size_20"
+                    android:layout_height="@dimen/size_20"
+                    android:src="@drawable/administration_ico_connect"
+                    android:layout_marginTop="@dimen/size_16"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_auto_connect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自动接通"
+                    android:textColor="@color/font_color_333333"
+                    android:layout_marginTop="@dimen/size_16"
+                    android:layout_toRightOf="@id/iv_icon3"
+                    android:layout_marginLeft="@dimen/size_12"
+                    android:textSize="@dimen/font_16"
+                    />
+
+                <TextView
+                    android:layout_below="@id/tv_auto_connect"
+                    android:layout_toRightOf="@id/iv_icon3"
+                    android:layout_marginLeft="@dimen/size_12"
+                    android:layout_marginTop="@dimen/size_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手表可自动接听电话."
+                    android:textSize="@dimen/font_10"
+                    android:textColor="@color/font_color_999999"
+
+                    />
+
+                <ToggleButton
+                    android:id="@+id/btn_on_line"
+                    android:layout_width="@dimen/size_45"
+                    android:layout_height="@dimen/size_25"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/edit_btn_open"
+                    android:textOn=""
+                    android:textOff=""
+                    android:checked="true"
+                    android:layout_marginTop="@dimen/size_16"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/font_color_EEEEEE"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_65"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginRight="@dimen/size_20"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_icon4"
+                    android:layout_width="@dimen/size_20"
+                    android:layout_height="@dimen/size_20"
+                    android:src="@drawable/administration_ico_loss"
+                    android:layout_marginTop="@dimen/size_16"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_phone_miss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机挂丢"
+                    android:textColor="@color/font_color_333333"
+                    android:layout_marginTop="@dimen/size_16"
+                    android:layout_toRightOf="@id/iv_icon4"
+                    android:layout_marginLeft="@dimen/size_12"
+                    android:textSize="@dimen/font_16"
+                    />
+
+                <TextView
+                    android:layout_below="@id/tv_phone_miss"
+                    android:layout_toRightOf="@id/iv_icon4"
+                    android:layout_marginLeft="@dimen/size_12"
+                    android:layout_marginTop="@dimen/size_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手表丢失后,手表在联网成功时就会自动发送位置到APP."
+                    android:textSize="@dimen/font_10"
+                    android:textColor="@color/font_color_999999"
+
+                    />
+
+                <ToggleButton
+                    android:id="@+id/btn_watch_miss"
+                    android:layout_width="@dimen/size_45"
+                    android:layout_height="@dimen/size_25"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/edit_btn_open"
+                    android:textOn=""
+                    android:textOff=""
+                    android:checked="true"
+                    android:layout_marginTop="@dimen/size_16"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/font_color_EEEEEE"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlt_screen_set"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_55"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginRight="@dimen/size_20"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_icon5"
+                    android:layout_width="@dimen/size_20"
+                    android:layout_height="@dimen/size_20"
+                    android:src="@drawable/administration_ico_screen"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="待机亮屏时间设置"
+                    android:textColor="@color/font_color_333333"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_icon5"
+                    android:layout_marginLeft="@dimen/size_12"
+                    android:textSize="@dimen/font_16"
+                    />
+
+                <ImageView
+                    android:id="@+id/tv_time_more"
+                    android:layout_width="@dimen/size_8"
+                    android:layout_height="@dimen/size_15"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/edit_ico_more"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_screen_time"
+                    android:layout_toLeftOf="@id/tv_time_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/size_11"
+                    android:textColor="@color/font_color_999999"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/font_color_EEEEEE"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlt_sound_set"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_55"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginRight="@dimen/size_20"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_icon6"
+                    android:layout_width="@dimen/size_20"
+                    android:layout_height="@dimen/size_20"
+                    android:src="@drawable/administration_ico_voice"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手表声音"
+                    android:textColor="@color/font_color_333333"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_icon6"
+                    android:layout_marginLeft="@dimen/size_12"
+                    android:textSize="@dimen/font_16"
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/size_8"
+                    android:layout_height="@dimen/size_15"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/edit_ico_more"
+                    android:layout_centerVertical="true"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/font_color_EEEEEE"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlt_bund_unbund"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_55"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginRight="@dimen/size_20"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_icon7"
+                    android:layout_width="@dimen/size_20"
+                    android:layout_height="@dimen/size_20"
+                    android:src="@drawable/administration_ico_binding"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="绑定与解绑"
+                    android:textColor="@color/font_color_333333"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_icon7"
+                    android:layout_marginLeft="@dimen/size_12"
+                    android:textSize="@dimen/font_16"
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/size_8"
+                    android:layout_height="@dimen/size_15"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/edit_ico_more"
+                    android:layout_centerVertical="true"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/font_color_EEEEEE"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlt_watch_info"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_55"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginRight="@dimen/size_20"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_icon8"
+                    android:layout_width="@dimen/size_20"
+                    android:layout_height="@dimen/size_20"
+                    android:src="@drawable/administration_ico_information"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:id="@+id/watch_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手表信息"
+                    android:textColor="@color/font_color_333333"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_icon8"
+                    android:layout_marginLeft="@dimen/size_12"
+                    android:textSize="@dimen/font_16"
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/size_8"
+                    android:layout_height="@dimen/size_15"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/edit_ico_more"
+                    android:layout_centerVertical="true"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/font_color_EEEEEE"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

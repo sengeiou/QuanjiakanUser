@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color"
+    >
+
+    <include layout="@layout/layout_title"
+        android:id="@+id/title"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+
+
+            <RelativeLayout
+                android:id="@+id/rlt_electricity"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_65"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginRight="@dimen/size_20"
+                >
+
+                <TextView
+                    android:id="@+id/tv_electricity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_quick_key_sos"
+                    android:textColor="@color/font_color_333333"
+                    android:layout_marginTop="@dimen/size_16"
+                    android:textSize="@dimen/font_16"
+                    />
+
+                <TextView
+                    android:layout_below="@id/tv_electricity"
+                    android:layout_marginTop="@dimen/size_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="可以直接进入SOS流程"
+                    android:textSize="@dimen/font_10"
+                    android:textColor="@color/font_color_999999"
+
+                    />
+
+                <ToggleButton
+                    android:id="@+id/btn_electricity"
+                    android:layout_width="@dimen/size_45"
+                    android:layout_height="@dimen/size_25"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/edit_btn_open"
+                    android:textOn=""
+                    android:textOff=""
+                    android:checked="true"
+                    android:layout_marginTop="@dimen/size_16"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/font_color_EEEEEE"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlt_auto_connect"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_65"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginRight="@dimen/size_20"
+                >
+
+
+                <TextView
+                    android:id="@+id/tv_auto_connect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_quick_key_ok"
+                    android:textColor="@color/font_color_333333"
+                    android:layout_marginTop="@dimen/size_16"
+                    android:textSize="@dimen/font_16"
+                    />
+
+                <TextView
+                    android:layout_below="@id/tv_auto_connect"
+                    android:layout_marginTop="@dimen/size_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="可以直接进入微聊界面"
+                    android:textSize="@dimen/font_10"
+                    android:textColor="@color/font_color_999999"
+
+                    />
+
+                <ToggleButton
+                    android:id="@+id/btn_on_line"
+                    android:layout_width="@dimen/size_45"
+                    android:layout_height="@dimen/size_25"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/edit_btn_open"
+                    android:textOn=""
+                    android:textOff=""
+                    android:checked="true"
+                    android:layout_marginTop="@dimen/size_16"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/font_color_EEEEEE"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_65"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginRight="@dimen/size_20"
+                >
+
+                <TextView
+                    android:id="@+id/tv_phone_miss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_quick_key_loop"
+                    android:textColor="@color/font_color_333333"
+                    android:layout_marginTop="@dimen/size_16"
+                    android:textSize="@dimen/font_16"
+                    />
+
+                <TextView
+                    android:layout_below="@id/tv_phone_miss"
+                    android:layout_marginTop="@dimen/size_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="可以直接进入拨打管理员电话."
+                    android:textSize="@dimen/font_10"
+                    android:textColor="@color/font_color_999999"
+
+                    />
+
+                <ToggleButton
+                    android:id="@+id/btn_watch_miss"
+                    android:layout_width="@dimen/size_45"
+                    android:layout_height="@dimen/size_25"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/edit_btn_open"
+                    android:textOn=""
+                    android:textOff=""
+                    android:checked="true"
+                    android:layout_marginTop="@dimen/size_16"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/font_color_EEEEEE"
+                    />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

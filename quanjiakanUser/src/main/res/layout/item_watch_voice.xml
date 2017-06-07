@@ -1,0 +1,175 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/baby_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_80"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_15"
+        >
+
+        <ImageView
+            android:id="@+id/baby_head"
+            android:layout_width="@dimen/size_45"
+            android:layout_height="@dimen/size_45"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/watch_voice_dad_baby" />
+
+        <TextView
+            android:id="@+id/baby_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/baby_head"
+            android:layout_toRightOf="@id/baby_head"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:text="宝贝"
+            android:textColor="@color/font_color_666666"
+            android:textSize="@dimen/font_14" />
+
+        <ImageView
+            android:id="@+id/baby_voice_bg"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/height_40"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/size_50"
+            android:src="@drawable/chat_bg_other"
+            android:scaleType="fitXY"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="@dimen/size_30"
+            android:layout_height="@dimen/size_30"
+            android:layout_alignRight="@id/baby_voice_bg"
+            android:layout_alignTop="@id/baby_voice_bg"
+            android:layout_marginRight="@dimen/size_1"
+            android:layout_marginTop="@dimen/size_5">
+
+            <ImageView
+                android:id="@+id/baby_voice_volumn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_30"
+                android:src="@drawable/data_ico_right_voice_three1"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/baby_voice_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/baby_voice_bg"
+            android:layout_marginLeft="@dimen/size_5"
+            android:layout_marginTop="@dimen/size_10"
+            android:layout_toRightOf="@+id/baby_voice_bg"
+            android:text="@string/common_error_voice"
+            android:textColor="@color/font_color_333333"
+            android:textSize="@dimen/font_16" />
+
+        <View
+            android:id="@+id/baby_unread_flag"
+            android:layout_width="@dimen/size_8"
+            android:layout_height="@dimen/size_8"
+            android:layout_toRightOf="@id/baby_voice_bg"
+            android:layout_above="@id/baby_voice_bg"
+            android:layout_marginLeft="@dimen/size_5"
+            android:background="@drawable/selecter_voice_unread"
+            />
+
+        <TextView
+            android:id="@+id/baby_voice_time"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/baby_voice_bg"
+            android:layout_marginBottom="@dimen/size_15"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/font_color_333333"
+            android:textSize="@dimen/font_14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dad_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_70"
+        android:layout_marginRight="@dimen/margin_15"
+        android:layout_marginLeft="@dimen/margin_15"
+        >
+
+        <ImageView
+            android:id="@+id/dad_head"
+            android:layout_width="@dimen/size_45"
+            android:layout_height="@dimen/size_45"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/watch_voice_dad_img" />
+
+        <TextView
+            android:id="@+id/dad_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/dad_head"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_5"
+            android:text="爸爸"
+            android:textColor="@color/font_color_333333"
+            android:textSize="@dimen/font_14"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/dad_voice_bg"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/height_40"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size_50"
+            android:src="@drawable/chat_bg_myself"
+            android:scaleType="fitXY"
+            />
+
+        <RelativeLayout
+            android:layout_width="@dimen/size_30"
+            android:layout_height="@dimen/size_30"
+            android:layout_alignLeft="@id/dad_voice_bg"
+            android:layout_alignTop="@id/dad_voice_bg"
+            android:layout_marginTop="@dimen/size_5">
+            <ImageView
+                android:id="@+id/dad_voice_volumn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_30"
+                android:src="@drawable/data_ico_left_voice_three1"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/dad_voice_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/dad_voice_bg"
+            android:layout_marginRight="@dimen/size_5"
+            android:layout_marginTop="@dimen/size_10"
+            android:layout_toLeftOf="@+id/dad_voice_bg"
+            android:text="@string/common_error_voice"
+            android:textColor="@color/font_color_333333"
+            android:textSize="@dimen/font_16" />
+
+        <TextView
+            android:id="@+id/dad_voice_time"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/dad_voice_bg"
+            android:layout_marginBottom="@dimen/size_5"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/font_color_333333"
+            android:textSize="@dimen/font_14" />
+    </RelativeLayout>
+</LinearLayout>

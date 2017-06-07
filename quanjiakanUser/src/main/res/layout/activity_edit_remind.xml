@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_title" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/size_20"
+                android:paddingRight="@dimen/size_20">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_18">
+
+                    <TextView
+                        android:id="@+id/tv_remind_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="提醒时间"
+                        android:textColor="@color/font_color_333333"
+                        android:textSize="@dimen/font_18" />
+
+                    <ImageButton
+                        android:id="@+id/ibt_add_time"
+                        android:layout_width="@dimen/size_20"
+                        android:layout_height="@dimen/size_20"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/white"
+                        android:src="@drawable/editor_ico_add_time" />
+
+
+                    <LinearLayout
+                        android:id="@+id/llt_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ibt_add_time"
+                        android:layout_marginTop="@dimen/size_8"
+                        android:orientation="horizontal">
+
+                        <!--<TextView-->
+                        <!--android:layout_width="@dimen/height_50"-->
+                        <!--android:layout_height="@dimen/size_20"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="&#45;&#45;:&#45;&#45;"-->
+                        <!--android:textSize="@dimen/font_14"-->
+                        <!--android:layout_marginRight="@dimen/size_6"-->
+                        <!--android:textColor="@color/color_xun_ing"-->
+                        <!--android:background="@drawable/selecter_btn_bac_green_small"-->
+                        <!--/>-->
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/llt_container"
+                        android:layout_marginTop="@dimen/size_16"
+                        android:background="@color/watch_week_bac" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_select_week"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_mon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/shape_week_nor"
+                            android:gravity="center"
+                            android:text="周一"
+                            android:textColor="@color/font_color_333333"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_tue"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/shape_week_nor"
+                            android:gravity="center"
+                            android:text="周二"
+                            android:textColor="@color/font_color_333333"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_wed"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/shape_week_nor"
+                            android:gravity="center"
+                            android:text="周三"
+                            android:textColor="@color/font_color_333333"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_thur"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/shape_week_nor"
+                            android:gravity="center"
+                            android:text="周四"
+                            android:textColor="@color/font_color_333333"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:textSize="12sp">
+
+                        <TextView
+                            android:id="@+id/tv_fri"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/shape_week_nor"
+                            android:gravity="center"
+                            android:text="周五"
+                            android:textColor="@color/font_color_333333"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_sat"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/shape_week_nor"
+                            android:gravity="center"
+                            android:text="周六"
+                            android:textColor="@color/font_color_333333"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_sun"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/shape_week_nor"
+                            android:gravity="center"
+                            android:text="周日"
+                            android:textColor="@color/font_color_333333"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:background="@color/watch_week_bac" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_plan"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_55"
+                    android:layout_below="@+id/ll_select_week">
+
+
+                    <TextView
+                        android:id="@+id/tv_plans"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="提醒名称"
+
+                        android:textColor="@color/hei222"
+                        android:textSize="@dimen/font_medium" />
+
+                    <ImageView
+                        android:id="@+id/tv_time_more"
+                        android:layout_width="@dimen/size_8"
+                        android:layout_height="@dimen/size_15"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/edit_ico_more" />
+
+                    <TextView
+                        android:id="@+id/tv_remind_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/size_5"
+                        android:layout_toLeftOf="@id/tv_time_more"
+                        android:textColor="@color/color_btn_green" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/watch_week_bac" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rlt_switch"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_65"
+
+                    >
+
+
+                    <TextView
+                        android:id="@+id/tv_auto_connect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="开/关"
+                        android:textColor="@color/font_color_333333"
+                        android:textSize="@dimen/font_16" />
+
+
+                    <ToggleButton
+                        android:id="@+id/btn_on_line"
+                        android:layout_width="@dimen/size_45"
+                        android:layout_height="@dimen/size_25"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/size_16"
+                        android:background="@drawable/edit_btn_open"
+                        android:checked="true"
+                        android:textOff=""
+                        android:textOn="" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/watch_week_bac" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llt_set_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_80"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="visible"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_share_title"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="@dimen/margin_15"-->
+                    <!--android:layout_marginTop="@dimen/margin_18"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:text="手表开机时间"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="@dimen/font_18" />-->
+
+
+                    <TextView
+                        android:id="@+id/btn_sure"
+                        android:layout_width="@dimen/height_60"
+                        android:layout_height="@dimen/height_30"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:gravity="center"
+                        android:text="完成"
+                        android:textColor="@color/font_color_333333"
+                        android:textSize="@dimen/font_18" />
+
+                    <TextView
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="@dimen/height_60"
+                        android:layout_height="@dimen/height_30"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:gravity="center"
+                        android:text="删除"
+                        android:textColor="@color/font_color_333333"
+                        android:textSize="@dimen/font_18" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/watch_week_bac" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_35"
+                        android:layout_centerInParent="true">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentTop="true"
+                            android:background="@color/watch_week_bac" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/watch_week_bac" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_100"
+                        android:layout_marginRight="@dimen/margin_100"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.quanjiakanuser.widget.WheelView
+                            android:id="@+id/wv_am_pm"
+                            android:layout_width="@dimen/size_0"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1" />
+
+                        <com.quanjiakanuser.widget.WheelView
+                            android:id="@+id/wv_hour"
+                            android:layout_width="@dimen/size_0"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1" />
+
+                        <com.quanjiakanuser.widget.WheelView
+                            android:id="@+id/wv_minute"
+                            android:layout_width="@dimen/size_0"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="@dimen/margin_50"
+        android:layout_marginRight="@dimen/margin_50"
+        android:background="@drawable/selecter_btn_bac_green"
+        android:gravity="center"
+        android:padding="@dimen/margin_10"
+        android:text="保存"
+        android:textColor="@color/color_btn_green"
+        android:textSize="@dimen/font_16" />
+
+
+
+
+
+</RelativeLayout>
