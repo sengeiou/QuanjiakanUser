@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/QuanjiakanUser.iml" filepath="$PROJECT_DIR$/QuanjiakanUser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraryPoloChart/libraryPoloChart.iml" filepath="$PROJECT_DIR$/libraryPoloChart/libraryPoloChart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quanjiakanUser/quanjiakanUser.iml" filepath="$PROJECT_DIR$/quanjiakanUser/quanjiakanUser.iml" />
+    </modules>
+  </component>
+</project>

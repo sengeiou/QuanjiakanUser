@@ -491,6 +491,7 @@ public class DeviceVoiceAdapter extends BaseAdapter {
                                 }
                                 //TODO 连续的没有问题
                                 for(int i = position+1;;i++){
+                                    //TODO 从当前播放处向后遍历非自己发出的下一个未读语音
                                     if(i<dataList.size() &&
                                             !dataList.get(i).getUserid().
                                                     equals(BaseApplication.getInstances().getUser_id()) &&
@@ -601,6 +602,7 @@ public class DeviceVoiceAdapter extends BaseAdapter {
                                     //TODO 向后查找满足条件的语音，并播放
                                     for(int i = position+1;;i++){
 //                                        notifyDataSetChanged();//TODO 刷新界面
+                                        //TODO 从当前播放处向后遍历非自己发出的下一个未读语音
                                         if(i<dataList.size() &&
                                                 !dataList.get(i).getUserid().
                                                         equals(BaseApplication.getInstances().getUser_id()) &&
